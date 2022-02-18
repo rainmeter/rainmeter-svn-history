@@ -1,0 +1,5 @@
+This is not the proper location of the Rainmeter's skins folder unless you are
+running a 'portable' version of Rainmeter. This folder only contains the default
+skins. If you want to add new skins you need to copy them to the Rainmeter\Skins
+folder in your My Documents folder.
+ 

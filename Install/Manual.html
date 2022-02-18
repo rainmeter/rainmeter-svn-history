@@ -1,0 +1,2372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META 
+content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<STYLE> HTML { font-family : "Times New Roman" } </STYLE><TITLE>Introduction</TITLE>
+<META content="Microsoft® HTML Help Workshop 4.1" name=GENERATOR></HEAD>
+<BODY text=#603d37 vLink=#3e6099 aLink=#000000 link=#3e6099 bgColor=#a25d56>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>RAINMETER</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->Rainmeter is a customizable resource meter 
+      that can display various performance data in different formats. Rainmeter 
+      can measure: 
+      <UL>
+        <LI>CPU load 
+        <LI>Allocated Memory 
+        <LI>Network Traffic 
+        <LI>NT performance data 
+        <LI>Uptime 
+        <LI>Free disk space 
+        <LI>...and plenty of other stuff </LI></UL>
+      <P>The data can be displayed e.g. in a histogram, a bar, bitmap frames or 
+      just plain numbers. Rainmeter also includes a plugin interface which means 
+      that the feature set can be extented with 3rd party plugins.</P>
+      <P>Windows 2000 or newer is required to run Rainmeter. It does not work in 
+      Win95, Win98 or WinME.</P>
+      <P>And no, Rainmeter does not measure how much it rained last night 
+      (though it probably could ;-) <!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>INSTALLATION</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P><B>IMPORTANT</B>: Rainmeter uses gdi+, so unless you are running 
+      WindowsXP you need to download the gdiplus.dll from <A 
+      href="http://www.microsoft.com/downloads/details.aspx?FamilyID=6a63ab9c-df12-4d41-933c-be590feaa05a&amp;DisplayLang=en">here</A> 
+      (just put the dll into the same folder where Rainmeter is or into 
+      Litestep's folder if you're not running Rainmeter as standalone).</P>
+      <P><I><B><FONT size=4>Installing for Explorer</FONT></B></I></P>
+      <P>Get the installer version of Rainmeter from <A 
+      href="http://www.rainmeter.net">http://www.rainmeter.net</A>) and run it. 
+      If you dislike installers, you can also get the zipped archive and 
+      uncompress it to some folder. Rainmeter is ready to be used after that. 
+      Note that if you want that Rainmeter starts with the Windows you need to 
+      keep the "Startup folder"-option checked in the installation.</P>
+      <P><I><B><FONT size=4>Installing for Litestep</FONT></B></I> </P>
+      <P>To install just copy everything from the zip-file to a 
+      <I>Rainmeter</I>-subfolder in your Litestep-folder (i.e. wherever 
+      $litestepdir$ variable points to. Usually <EM>C:\Litestep\</EM>). You 
+      don't need the <I>Rainmeter.exe</I> if you are using Rainmeter as Litestep 
+      plugin, but there is no harm keeping that also in the folder. </P>
+      <P>After copying, open your step.rc and add following line:</P>
+      <P><FONT face="Courier New">LoadModule 
+      $litestepdir$Rainmeter\Rainmeter.dll</FONT></P>
+      <P>... and recycle. Most of the configuration of Rainmeter is done in a 
+      <I>Rainmeter.ini</I> file and not in the step.rc. Check the 
+      Settings-section for details.</P>
+      <P><I><B><FONT size=4>Uninstalling</FONT></B></I></P>
+      <P>If you installed Rainmeter with the installer you can uninstall it from 
+      the "Add or Remove Programs". Otherwise just delete all the files you 
+      uncompressed from the zip-file (make sure that Rainmeter isn't running 
+      when doing that). <!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>SETTINGS</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>There isn't any fancy settings editor, so you need to change the 
+      settings with your favorite text editor. The settings for Rainmeter are 
+      scattered to several places, but for most of you the <I>Rainmeter.ini</I> 
+      is the only place you need to make changes. The general configuration 
+      settings are in a <I>Rainmeter.ini</I>-file. The skin settings are in the 
+      skin's ini-files. The Litestep's step.rc only has few optional entries, 
+      which can be used to define the paths and select the skin. </P>
+      <P><FONT size=4><B>Step.rc</B></FONT></P>
+      <P><B>RainmeterIniFile</B> <BR>This can be set to point to the 
+      Rainmeter.ini file if it is not placed in the default place (i.e. in the 
+      Rainmeter.dll's folder). </P>
+      <P><B>RainmeterSkinPath<BR></B>This defines the path where the skins are. 
+      The skins must be in separate subfolders under the given folder.</P>
+      <P><B>RainmeterCurrentConfig</B> <BR>The name of current config. This can 
+      be used to force the use of some config. You must also define 
+      RainmeterCurrentConfigIni.</P>
+      <P><B>RainmeterCurrentConfigIni</B><BR>The name of current config ini-file 
+      (only the ini-file, not the path!).</P>
+      <P><B>RainmeterWindowX</B><BR>Sets the window's x-coordinate.</P>
+      <P><B>RainmeterWindowY</B><BR>Sets the window's y-coordinate.</P>
+      <P><B><FONT size=4>Rainmeter.ini</FONT></B></P>
+      <P>The file has two main sections [Rainmeter] and [Statistics]. The 
+      Rainmeter section contains general settings that can be used to change how 
+      Rainmeter behaves. The settings are used as default values for all new 
+      configs that are opened. Once the config is opened it will write the 
+      settings under its own sertion in the Rainmeter.ini file.&nbsp; The 
+      Statistics section contains some things that few measures store in there. 
+      Do not modify them by hand. </P>
+      <P>One special section is [TrayMeasure], which can be used to define a 
+      measure for the tray icon. You can use any measure for this as long as it 
+      returns some meaningful values (i.e. numbers between some limits).</P>
+      <P>These must be put under [Rainmeter]-section (or under the different 
+      config sections):</P>
+      <P><B>WindowX<BR></B>X-position of the meter window. Negative values can 
+      be used too, in which case the position is relative to right edge of the 
+      screen. If Rainmeter is ran inside a lsbox the window position should be 
+      set to 0.</P>
+      <P><B>WindowY<BR></B>Y-position of the meter window. Negative values can 
+      be used too, in which case the position is relative to bottom edge of the 
+      screen.</P>
+      <P><B>AllowNegativeCoordinates<BR></B>If set to 1, the negative 
+      coordinates are interpret as negative. If set to 0, they define offset 
+      from the bottom right corner of the desktop (like most Litestep modules 
+      do).</P>
+      <P><B>SavePosition<BR></B>If set to 1, the position of the window is 
+      stored in the Rainmeter.ini file so that it'll be remembered when 
+      Rainmeter is executed the next time.</P>
+      <P><B>AlwaysOnTop<BR></B>If set to 1, the window is always on top of other 
+      windows. If 0, the window positioning is normal. If set to -1 the window 
+      stays back of the other windows. -2 pins the window to desktop and 2 keeps 
+      the window on top of other topmost windows. Note that -2 (OnDesktop) only 
+      works with Explorer-shell.</P>
+      <P><B>Draggable<BR></B>If set to 1, the window can be dragged around with 
+      the mouse. If 0, the window stationary.</P>
+      <P><B>SnapEdges<BR></B>If set to 1, the window will snap to screen edges 
+      when moved.</P>
+      <P><B>HideOnMouseOver<BR></B>If set to 1 the meter window will disappear 
+      if the mouse pointer is moved on it. The window will reappear when the 
+      mouse pointer is moved off the position where the window was. If shift, 
+      ctrl or alt is hold while moving the mouse, the window will not disappear 
+      (or reappear).</P>
+      <P><B>StartHidden<BR></B>If set to 1, Rainmeter is hidden when started. 
+      You can use !RainmeterShow-bang to make it visible.</P>
+      <P><B>NativeTransparency<BR></B>Set to 1 for native transparency support 
+      (only for Win2k &amp; XP).</P>
+      <P><B>AlphaValue<BR></B>The transparency value for the window. Use values 
+      between 0...255. Only works if native transparency is enabled.</P>
+      <P><B>ClickThrough<BR></B>If set to 1 the mouse clicks go through the 
+      window. Only works if native transparency is enabled.</P>
+      <P><B>LeftMouseDownAction<BR></B>Command or a bang that will be executed 
+      when the left mouse button is pressed down over the Rainmeter's window. 
+      Note that this disables the dragging.</P>
+      <P><B>RightMouseDownAction<BR></B>Command or a bang that will be executed 
+      when the right mouse button is pressed down over the Rainmeter's 
+      window.</P>
+      <P><B>LeftMouseUpAction<BR></B>Command or a bang that will be executed 
+      when the left mouse button is released over the Rainmeter's window. </P>
+      <P><B>RightMouseUpAction<BR></B>Command or a bang that will be executed 
+      when the right mouse button is released over the Rainmeter's window. Note 
+      that this disables the context menu.</P>
+      <P><B>MouseOverAction</B><BR>Command or a bang that will be executed when 
+      the mouse goes over the Rainmeter's window.</P>
+      <P><B>MouseLeaveAction</B><BR>Command or a bang that will be executed when 
+      the mouse leaves the Rainmeter's window.</P>
+      <P><B>DesktopWorkArea</B><BR>Sets a new work area for the desktop. The 
+      workarea defines the maximized windows cover. Use four comma separated 
+      values (e.g. DesktopWorkArea=0,0,1500,1200). Note that moving the taskbar 
+      will reset the workarea to Windows' default (changing screen resolution 
+      will do the same).</P>
+      <P><B>TrayIcon</B><BR>Set to 0 to get rid of the tray icon.</P>
+      <P><B>FadeDuration</B><BR>This defines the amount of time it takes to fade 
+      the window. The time is in milliseconds. To get rid of the fading set the 
+      value to 0.</P>
+      <P><B>TrayExecuteL, TrayExecuteM, TrayExecuteR, TrayExecuteDL, 
+      TrayExecuteDM, TrayExecuteDR<BR></B>Executes a command or !bang when the 
+      tray icon is (double)clicked with the mouse. Note that TrayExecuteR will 
+      override the context menu in the tray. </P>
+      <P>&nbsp;</P>
+      <P>These must be put under [TrayMeasure]-section:</P>
+      <P><B>Measure</B><BR>The name of the measure which value the tray will 
+      show.</P>
+      <P><B>TrayMeter</B><BR>This can be either HISTOGRAM is BITMAP.</P>
+      <P><B>TrayColor1</B><BR>Defines the background color for the 
+histogram.</P>
+      <P><B>TrayColor2</B><BR>Defines the foreground color for the 
+histogram.</P>
+      <P><B>TrayBitmap</B><BR>Defines the name of the bitmap used in the tray. 
+      The bitmap can have as many frames as you like but each frame must be 
+      16x16 in size. The path is relative to the Rainmeter's Skins-folder.</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>SKINS</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>The skins are placed into the Skins-folder. Each skin must be in it's 
+      own subfolder. The actual skin-file is a normal ini-file with several 
+      sections that define the skin's shape and the things it&nbsp; measures and 
+      displays. The skin's subfolder can contain several ini-files, but only one 
+      of them can be active at the same time. This allows you to for example 
+      supply localized skins or different variations of some skin.</P>
+      <P><B>Important: </B>Do not use spaces in the name of the folder or the 
+      ini-files.</P>
+      <P>The skin's ini-file is divided into four parts. All the general 
+      settings are put under [Rainmeter] section and the variables in 
+      [Variables]-section. After the general stuff comes the measures, which do 
+      the actual measuring of values. After the measures comes meters, which are 
+      visual representations of the measures. It is possible to bind many meters 
+      for one measure. It's not necessary to put the sections to this order but 
+      it might make the configs better organized.</P>
+      <P>The variables are keywords that are replaced in other settings. These 
+      can be used e.g. to gather user defined values to the top of the 
+      config-file so that they can be easily changed. To use a variable just 
+      surround the keyword with '#'-chars.</P>
+      <P>These must be put under [Rainmeter] section.</P>
+      <P><B>Background<BR></B>Name of the background image. If this is omitted a 
+      copy of the desktop is taken and used as the background for the meters. 
+      Pink color (255, 0, 255) can be used as transparent color. You can use 
+      BMPs, JPGs and PNGs (with alpha channel!)</P>
+      <P><B>BackgroundMode<BR></B>Defines the background mode: </P>
+      <UL>
+        <LI>0 = Image as defined by <B>Background</B> 
+        <LI>1 = Transparent 
+        <LI>2 = Solid color 
+        <LI>3 = Scaled background image </LI></UL>
+      <P><B>BackgroundMargins</B><BR>Defines the margins for the background 
+      image that are not scaled when the BackgroundMode is set to 3. E.g. 
+      BackgroundMargins=10,10,10,10</P>
+      <P><B>SolidColor<BR></B>If the background mode is set to 2, this defines 
+      the color of the background. </P>
+      <P><B>SolidColor2</B><BR>If the background mode is set to 2, this defines 
+      the second color of the background for gradient. </P>
+      <P><B>GradientAngle<BR></B>If the background mode is set to 2, this 
+      defines the angle for the color gradient. The angle is defined as 
+      radians.</P>
+      <P><B>BevelType<BR></B>This draws a bevel edge around the solid 
+      background. 0 = no bevel, 1 = raised, 2 = sunken.</P>
+      <P><B>Update<BR></B>The update time for the meters. The value should be 
+      given in milliseconds. The default value is 1000 (i.e. one second).</P>
+      <P><B>DynamicWindowSize</B><BR>If set to 1 the size of the window is 
+      calculated during every update. The window is scaled automatically if 
+      necessary.</P>
+      <P><B>DragMargins</B><BR>Defines the area from where the window can be 
+      dragged. You need to define 4 values separated with comma. The values 
+      define the margin of non-draggable area. It's also possible to use 
+      negative numbers in which case the margin is calculated from the opposite 
+      side. E.g. DragMargins=0, -100, 0, 0 </P>
+      <P><B>KeepOnScreen</B><BR>Set to 1 to keep the windows always on the 
+      monitor area.</P>
+      <P><B>Author<BR></B>The name and email of the author of the skin. The 
+      string is displayed in the about dialog.</P>
+      <P><B>AppVersion<BR></B>The minimum version or Rainmeter that is needed by 
+      this skin. It is not necessary to define this if you don't want to. The 
+      version is a single number that can be calculated like this: Major * 1000 
+      + Minor. E.g. a value for Rainmeter 0.11.4 would be 11004. 
+      <!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>MEASURES</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>Each measure needs to have a unique name, which defines a section in 
+      the ini-file for that measure. The name needs to be put inside 
+      []-characters. The name doesn't matter as long as you don't use it 
+      anywhere else in the same ini-file. Do not use spaces in the names. The 
+      meters use the section names to bind to the measures. Check the supplied 
+      ini-files for examples.</P>
+      <P><B>Important!</B> Some meters require a range of values (BAR, 
+      HISTOGRAM, etc), so that they can display the measured value as relative 
+      to the minimum and maximum values. Not all measures are able to calculate 
+      the minimum and maximum value automatically so you need to do that 
+      manually with MinValue and MaxValue.</P>
+      <P><FONT size=4><B><I>General settings for all measures</I></B></FONT></P>
+      <P><FONT size=3><STRONG>Measure<BR></STRONG>This defines what is measured. 
+      The valid values are:</FONT></P>
+      <UL>
+        <LI><FONT size=3><B>CPU - </B>Measures total load from all CPUs (Use the 
+        PerfMon plugin if you want separate the CPUs). </FONT>
+        <LI><FONT size=3><B>Memory - </B>Measures overall memory 
+        utilization.</FONT> 
+        <LI><FONT size=3><B>PhysicalMemory - </B>Measures allocated physical 
+        memory.</FONT> 
+        <LI><FONT size=3><B>SwapMemory - </B>Measures allocated swap.</FONT> 
+        <LI><FONT size=3><B>NetIn - </B>Measures incoming network 
+        traffic.</FONT> 
+        <LI><FONT size=3><B>NetOut - </B>Measures outgoing network 
+        traffic.</FONT> 
+        <LI><FONT size=3><B>NetTotal - </B>Measures outgoing network 
+        traffic.</FONT> 
+        <LI><B>FreeDiskSpace</B><FONT size=3><B> - </B>Measures free 
+        diskspace.</FONT> 
+        <LI><B>PerfMon</B><FONT size=3><B> - </B>Gets NT's performance data. 
+        </FONT>
+        <LI><FONT size=3><B>Uptime</B> <B>-</B> Shows how long your computer has 
+        been on. This works only in a STRING-meter.</FONT> 
+        <LI><B>Plugin</B> <B>-</B> Measure is defined by an external plugin. 
+        <LI><B>Registry</B> - Measures registry values. 
+        <LI><B>Time</B> - Measures time and date. 
+        <LI><B>Calc</B> - Calculates formulas. </LI></UL>
+      <P><FONT size=3><STRONG>InvertMeasure<BR></STRONG>If set to 1, </FONT>the 
+      measured value is inverted. E.g. you can measure allocated disk space 
+      instead of free space.</P>
+      <P><B>IfAboveAction<BR></B>A bang or command that is executed when the 
+      measure goes above the value defined in IfAboveValue. The action is 
+      executed only when the measure exceeds the value, so it needs to go below 
+      the defined value before the action is executed again.</P>
+      <P><B>IfAboveValue</STRONG></B><FONT size=3><BR>The value for 
+      </FONT>IfAboveAction.</P>
+      <P><B>IfBelowAction<BR></B>A bang or command that is executed when the 
+      measure goes below the value defined in IfBelowValue. The action is 
+      executed only when the measure falls below the value, so it needs to go 
+      above the defined value before the action is executed again.</P>
+      <P><B>IfBelowValue</STRONG></B><FONT size=3><BR>The value for 
+      </FONT>IfBelowAction.</P>
+      <P><B>IfEqualAction<BR></B>A bang or command that is executed when the 
+      measure is equal with the value defined in IfEqualValue. The action is 
+      executed only once when the measure is equal to the value, so it needs to 
+      go above or below the defined value before the action is executed again. 
+      The value is rounded to full integer.</P>
+      <P><B>IfEqualValue</STRONG></B><FONT size=3><BR>The value for 
+      </FONT>IfEqualAction.</P>
+      <P><B>Disabled</B><BR>If set to 1, the measure is disabled at start.</P>
+      <P><B>UpdateDivider<BR></B>This value determines how often the measures 
+      are updated. This is bound to the Update value. For example if the Update 
+      is set to 1000 and the UpdateDivider is 30, the measure is updated every 
+      30 seconds. The default value is 1.</P>
+      <P><B>MaxValue<BR></B>The maximum value the measure can have.</P>
+      <P><B>MinValue<BR></B>The minimum value the measure can have.</P>
+      <P><B>Substitute<BR></B>A list of comma separated value pairs that can be 
+      used to change certain value to another. You must use quotes around the 
+      values! E.g. Substitute="cat":"dog" would change all cats to dogs in the 
+      measured value. </P>
+      <P><B>AverageSize<BR></B>Defines the window size of average measuring. 
+      E.g. if this is set to 10 the returned value is average of last ten 
+      values.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><B><FONT size=4>NetIn</FONT></B></I></P>
+      <P><B>NetInSpeed<BR></B>The maximum speed of your network connection 
+      input. The value is given in bits per second. If this value is omitted or 
+      set to zero, the maximum value is determined from the input. Watch out for 
+      peaks.</P>
+      <P><B>TrafficAction</B> <BR>Action to be executed when a certain amount of 
+      data has been downloaded.</P>
+      <P><B>TrafficValue</B> <BR>The value for the TrafficAction.</P>
+      <P><B>Interface</B><BR>The index of the measured NIC. If this is set to 0 
+      (default) all interfaces are added together. Value 1 means the fisrt NIC, 
+      2 the second, etc.</P>
+      <P><B>Cumulative<BR></B>If set to 1, the measure gathers cumulative value 
+      (i.e. adds the measured values together). This can be used to measure the 
+      total amount of transferred data during certain timeperiod.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><B><FONT size=4>NetOut</FONT></B></I></P>
+      <P><B>NetOutSpeed<BR></B>The maximum speed of your network connection 
+      output. The value is given in bits per second. If this value is omitted or 
+      set to zero, the maximum value is determined from the input.</P>
+      <P><B>TrafficAction</B> <BR>Action to be executed when a certain amount of 
+      data has been uploaded.</P>
+      <P><B>TrafficValue</B> <BR>The value for the TrafficAction.</P>
+      <P><B>Interface</B><BR>The index of the measured NIC. If this is set to 0 
+      (default) all interfaces are added together. Value 1 means the fisrt NIC, 
+      2 the second, etc.</P>
+      <P><B>Cumulative<BR></B>If set to 1, the measure gathers cumulative value 
+      (i.e. adds the measured values together). This can be used to measure the 
+      total amount of transferred data during certain timeperiod.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><B><FONT size=4>NetTotal</FONT></B></I></P>
+      <P><B>NetTotalSpeed<BR></B>The maximum speed of your total network 
+      connection. The value is given in bits per second. If this value is 
+      omitted or set to zero, the maximum value is determined from the 
+input.</P>
+      <P><B>TrafficAction</B> <BR>Action to be executed when a certain amount of 
+      data has been uploaded and downloaded.</P>
+      <P><B>TrafficValue</B> <BR>The value for the TrafficAction.</P>
+      <P><B>Interface</B><BR>The index of the measured NIC. If this is set to 0 
+      (default) all interfaces are added together. Value 1 means the fisrt NIC, 
+      2 the second, etc.</P>
+      <P><B>Cumulative<BR></B>If set to 1, the measure gathers cumulative value 
+      (i.e. adds the measured values together). This can be used to measure the 
+      total amount of transferred data during certain timeperiod.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><B><FONT size=4>FreeDiskSpace</FONT></B></I></P>
+      <P><B>Drive<BR></B>This is the drive which diskspace is measured. E.g. 
+      "C:\"</P>
+      <P><B>Total<BR></B>If set to 1 this returns the total size of the 
+      drive.</P>
+      <P><B>Label</B><BR>If set to 1 this returns the label of the drive.</P>
+      <HR width="40%" color=#000000>
+
+      <P><FONT size=4><B><I>Plugin</I></B></FONT></P>
+      <P><B>Plugin</B><B><BR></B>This defines the name of the plugin that 
+      handles the actual measuring. </P>
+      <HR width="40%" color=#000000>
+
+      <P><FONT size=4><B><I>Registry</I></B></FONT></P>
+      <P><B>RegKey<BR></B>The name of the registry key.</P>
+      <P><B>RegHKey<BR></B>The name of the HKEY. Possible values are: 
+      HKEY_CURRENT_CONFIG, HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE, 
+      HKEY_CLASSES_ROOT, HKEY_PERFORMANCE_DATA and HKEY_DYN_DATA.</P>
+      <P><B>RegValue<BR></B>The name of the registry keys value. Only string and 
+      long values are supported.</P>
+      <HR width="40%" color=#000000>
+
+      <P><FONT size=4><B><I>Time</I></B></FONT></P>
+      <P><B>Format<BR></B>The format how the time is written. E.g. "%H:%M:%S". 
+      You can find out all the format codes from here: <A 
+      href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_strftime.2c_.wcsftime.asp">http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vclib/html/_crt_strftime.2c_.wcsftime.asp</A></P>
+      <P><B>TimeZone<BR></B>The timezone value (e.g. +2.0). You can use also 
+      fractional values. If this is not given the localtime is used.</P>
+      <P><B>DaylightSavingTime<BR></B>If set to 1, the daylight saving time is 
+      applied to the time (it depends on your local time). This is only used if 
+      the TimeZone has been set.</P>
+      <HR width="40%" color=#000000>
+
+      <P><FONT size=4><B><I>Calc</I></B></FONT></P>
+      <P><B>Formula<BR></B>This defines the calculated formula. You can use 
+      other measures as variables. There is also a special variable called 
+      Counter, which is increased on every update. The variables are update only 
+      after all other measures are updated, so the values are one update cycle 
+      behind. Note that everything is case sensitive and the functions must be 
+      in all capital letters (e.g. SIN(10 * PI)). More info about the formulas 
+      can be found from here: <A 
+      href="http://www.sama.ru/~despair/ccalc/reference.html">http://www.sama.ru/~despair/ccalc/reference.html</A> 
+<!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>METERS</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>Each meter needs to have an unique name, which defines a section in the 
+      ini-file for that meter. The name needs to be put inside []-characters. 
+      The name doesn't matter as long as you don't use it anywhere else in the 
+      same ini-file. Do not use spaces in the names.</P>
+      <P><FONT size=4><B><I>General settings for all meters</I></B></FONT></P>
+      <P><B>MeasureName</B><BR>The name of the measure that this meter 
+      displays.</P>
+      <P><B>X</B><BR>The X-position of the meter inside the window. The 
+      coordinates can be made relative to the previous meter by adding 'r' to 
+      the end of the number (e.g. X=5r). You can also use capital R which makes 
+      the position relative to the right edge of the previous meter.</P>
+      <P><FONT size=3><STRONG>Y<BR></STRONG></FONT>The Y-position of the meter 
+      inside the window. The coordinates can be made relative to the previous 
+      meter by adding 'r' to the end of the number (e.g. Y=-10r). You can also 
+      use capital R which makes the position relative to the bottom edge of the 
+      previous meter.</P>
+      <P><FONT size=3><STRONG>W<BR></STRONG></FONT>The width of the meter. It is 
+      not necessary to define this if the width can be calculated from an image 
+      or if you are using a STRING meter. If you use the desktop as background 
+      for the Rainmeter you should always define the correct height and width 
+      for the meters or the window's dimensions might be calculated wrongly.</P>
+      <P><FONT size=3><STRONG>H<BR></STRONG></FONT>The height of the meter. This 
+      can also be left undefined under the same conditions as W.</P>
+      <P><B>Hidden<BR></B>If set to 1, the meter is hidden.</P>
+      <P><B>LeftMouseDownAction<BR>RightMouseDownAction<BR>LeftMouseUpAction<BR>RightMouseUpAction<BR>MouseOverAction<BR>MouseLeaveAction<BR></B>These 
+      are the same as with the global settings except that they only apply to 
+      the specific meter. I.e. The mouse action is only executed when the mouse 
+      is on the meter's area. These settings override the global setting.</P>
+      <P><B>UpdateDivider<BR></B>This value determines how often the meter is 
+      updated. This is bound to the Update value. For example if the Update is 
+      set to 1000 and the UpdateDivider is 30, the meter is updated every 30 
+      seconds. The default value is 1.</P>
+      <P><B>SolidColor<BR></B>The color of the meter's background. </P>
+      <P><B>SolidColor2</B><BR>The second color of the meter's background for 
+      gradient. </P>
+      <P><B>GradientAngle<BR></B>The angle of the meter's background color 
+      gradient. The angle is defined as radians.</P>
+      <P><B>BevelType<BR></B>This draws a bevel edge around the solid 
+      background. 0 = no bevel, 1 = raised, 2 = sunken.</P>
+      <P><STRONG>Meter</STRONG><FONT size=3><STRONG><BR></STRONG>Type of the 
+      meter. The valid values are:</FONT></P>
+      <UL>
+        <LI><B>HISTOGRAM</B> 
+        <LI><B>STRING</B> 
+        <LI><B>BAR</B> 
+        <LI><B>BITMAP</B> 
+        <LI><B>IMAGE</B> 
+        <LI><B>LINE</B> 
+        <LI><B>ROTATOR</B> 
+        <LI><B>BUTTON</B> </LI></UL>
+      <HR width="40%" color=#000000>
+
+      <P><I><B><FONT size=4>Histogram</FONT></B></I></P>
+      <P><B>SecondaryMeasureName<BR></B>The name of the secondary measure. This 
+      defines the measure for the secondary histogram that is drawn on the same 
+      meter. It is not necessary to define this if the other meter is not 
+      needed. </P>
+      <P><B>PrimaryColor<BR></B>Color for the primary histogram. The colors are 
+      given in RGB format. Separate the color components with ",". E.g. 
+      PrimaryColor<B>=</B>10,30,255</P>
+      <P><B>SecondaryColor<BR></B>Color for the secondary histogram.</P>
+      <P><B>BothColor<BR></B>Color that is used when the primary and secondary 
+      histograms are on top of eachother.</P>
+      <P><B>PrimaryImage<BR></B>Name of the image that is used behind the 
+      secondary histogram. You can only use either colors or images but not both 
+      at the same time. So, if you define PrimaryImage you must also define 
+      SecondaryImage and BothImage (if you have a secondary measure in the same 
+      histogram).</P>
+      <P><B>SecondaryImage<BR></B>Name of the image that is used behind the 
+      secondary histogram.</P>
+      <P><B>BothImage<BR></B>Name of the image that is used when the primary and 
+      secondary histograms are on top of eachother.</P>
+      <P><B>Autoscale<BR></B>If set to 1, the histogram is automatically scaled 
+      to show all the values.</P>
+      <P><B>Flip<BR></B>If set to 1 the meter is flipped upsidedown.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><B><FONT size=4>String</FONT></B></I></P>
+      <P><B>FontColor<BR></B>The color of the text. </P>
+      <P><B>Prefix<BR></B>String that is displayed before the value.</P>
+      <P><B>Postfix<BR></B>String that is displayed after the value.</P>
+      <P><B>FontFace<BR></B>Name of the font</P>
+      <P><B>FontSize<BR></B>Size of the font.</P>
+      <P><B>StringAlign<BR></B>The alignment of the string. The valid values 
+      are: LEFT, CENTER and RIGHT.</P>
+      <P><B>StringStyle</B><B><BR></B>Style of the string. The valid values are: 
+      NORMAL, BOLD, ITALIC and BOLDITALIC.</P>
+      <P><B>Scale<BR></B>Scaling factor for the measured value. The measured 
+      value is <I>divided</I> with the scale value, so in order to get 1000 
+      times smaller values just set the scale to 1000. If the scale value has a 
+      decimal point (e.g. 1000.0) the resulting measured value is displayed as 
+      floating point value with one decimal.</P>
+      <P><B>AutoScale<BR></B>If set to 1, the value is scaled automatically. 
+      This setting overrides <B>Scale</B>. The value is automatically postfixed 
+      with T, G, M or k depending how much it was scaled.</P>
+      <P><B>Percentual</B><BR>If set to 1, the value is displayed in 
+      percents.</P>
+      <P><B>NumOfDecimals<BR></B>The number of decimals used in the displayed 
+      value.</P>
+      <P><B>AntiAlias<BR></B>If set to 1, the text is drawn as antialiased.</P>
+      <P><B>Text<BR></B>The text that is displayed. Use %1 in the string to 
+      display the measured value. If this is bound to several measures just use 
+      %2, %3, etc. for different values.</P>
+      <P><B>ClipString<BR></B>If set to 1 the width (<B>W</B>) of the meter 
+      clips the string. An ellipsis is added to the end of the string. </P>
+      <P><B>Angle</B><BR>This defines the angle of the text. The value is given 
+      as radians. Note that the size of the text is still calculated as if the 
+      text would be horizontal.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><B><FONT size=4>Bar</FONT></B></I></P>
+      <P><B>BarColor</B><B><BR></B>The color of the bar.</P>
+      <P><B>BarImage</B><B><BR></B>The image that is used behind the bar. This 
+      can be used instead of the BarColor.</P>
+      <P><B>BarBorder</B><B><BR></B>This defines how much from the beginning and 
+      end of the bitmap is always drawn.</P>
+      <P><B>BarOrientation</B><B><BR></B>The orientation of the bar. Valid 
+      values are:</P>
+      <UL>
+        <LI><FONT size=3><B>HORIZONTAL</B></FONT> 
+        <LI><FONT size=3><B>VERTICAL</B></FONT> </LI></UL>
+      <P><B>Flip<BR></B>Set to 1 to flip the direction of the bar.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><B><FONT size=4>Bitmap</FONT></B></I></P>
+      <P><B>BitmapImage</B><B><BR></B>This is the name of the image that holds 
+      the image frames. The images can be laid horizontally or vertically in the 
+      bitmap. The orientation is determined automatically form the hieght or the 
+      width of the bitmap (whichever is larger). Also the size of one frame is 
+      calculated automatically so you need to crop the image so that there is no 
+      extra space around the frames.</P>
+      <P><B>BitmapFrames<BR></B>The number of&nbsp; frames in the bitmap.</P>
+      <P><B>BitmapZeroFrame</B><BR>If set to 1, the first frame is used only 
+      when the measured value is zero. Otherwise the frames are linearly 
+      determined by the measured value.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><FONT size=4><B>Image</B></FONT></I></P>
+      <P>Note that this meter need's not to be bound on any measure as it really 
+      doesn't show the measured value in any way. The purpose for this meter is 
+      to make skinning easier. However, if you bind this to something it tries 
+      to load the image that the measure gives out as string value. If the W and 
+      H are defined for the meter, the image is scaled to the given size.</P>
+      <P><B>ImageName<BR></B>Name of the image to be displayed. </P>
+      <HR width="40%" color=#000000>
+
+      <P><I><FONT size=4><B>Line</B></FONT></I></P>
+      <P><B>LineCount<BR></B>Number of lines in the meter. There can be any 
+      number of lines in the same meter. The below settings are set for the 
+      different lines by specifying the line number after the name. Note that 
+      the [N] for the first line is never given. So, for example to set the 
+      color of the first line you'd give "LineColor=255,0,0" and for the second 
+      line "LineColor2=0,0,0", etc.</P>
+      <P><B>MeasureName[N]</B><BR>The name of the measure for the line [N].</P>
+      <P><B>LineColor[N]</B><BR>The color of the line N. </P>
+      <P><B>Scale[N]</B><BR>The scale of the line N. The measured value is 
+      multiplied with this.</P>
+      <P><B>AutoScale</B><BR>If set to 1, the lines are automatically scaled so 
+      that the largest value is visible in the meter. If set to 0, the meter's 
+      scale is taken from the largest max value of the measures.</P>
+      <P><B>HorizontalLines</B><BR>If set to 1 horizontal lines are drawn behind 
+      the histogram lines.</P>
+      <P><B>HorizontalLineColor</B><BR>The color of the horizontal lines.</P>
+      <P><B>AntiAlias<BR></B>If set to 1, the lines are drawn as 
+antialiased.</P>
+      <P><B>LineWidth<BR></B>Width of the line.</P>
+      <P><B>Flip<BR></B>If set to 1 the meter is flipped upsidedown.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><FONT size=4><B>Roundline</B></FONT></I></P>
+      <P><B>LineWidth<BR></B>This defines the width of the line (1.0 = one 
+      pixel).</P>
+      <P><B>LineLength<BR></B>This defines the length of the line. The lenght is 
+      always measured from the center of rotation (no matter what the LineStart 
+      value is).</P>
+      <P><B>LineStart<BR></B>This defines where the line start.</P>
+      <P><B>StartAngle<BR></B>The start angle for the line. This is in radians 
+      and the zero angle is towards positive x-axis. Normal rotation direction 
+      is clockwise.</P>
+      <P><B>RotationAngle<BR></B>The size of the rotation angle for the line. 
+      Use negative value for counter-clockwise rotation.</P>
+      <P><B>AntiAlias<BR></B>If set to 1, the line is antialiased.</P>
+      <P><B>ValueRemainder<BR></B>Use remainder instead of the actual measured 
+      value. This can be used to draw analog clock (check the example in the 
+      example skin files).</P>
+      <P><B>LineColor<BR></B>The color of the line.</P>
+      <P><B>Solid<BR></B>Set to 1 and the meter will draw a pie-chart 
+      instead.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><FONT size=4><B>Rotator</B></FONT></I></P>
+      <P><B>ImageName<BR></B>Name of the image to be rotated</P>
+      <P><B>OffsetX<BR></B>X-offset of the center of rotation.</P>
+      <P><B>OffsetY<BR></B>Y-offset of the center of rotation.</P>
+      <P><B>StartAngle<BR></B>The start angle for the line. This is in radians 
+      and the zero angle is towards positive x-axis. Normal rotation direction 
+      is clockwise.</P>
+      <P><B>RotationAngle<BR></B>The size of the rotation angle for the line. 
+      Use negative value for counter-clockwise rotation.</P>
+      <P><B>ValueRemainder<BR></B>Use remainder instead of the actual measured 
+      value. This can be used to draw analog clock (check the example in the 
+      example skin files).</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><FONT size=4><B>Button</B></FONT></I></P>
+      <P>This not a normal meter since you cannot bind it to any measure. The 
+      purpose of it is to make button creation easier.</P>
+      <P><B>ButtonImage<BR></B>The name of the button image. The image must have 
+      3 frames which can be set either horizontally or vertically (The 
+      orientation is checked from the width/height of the image).</P>
+      <P><B>ButtonCommand<BR></B>The command or !bang that is executed when the 
+      button is pressed.</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>SOUND</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>The Rainmeter supports audio commands that can be used in the actions 
+      (e.g. TrafficAction). Just use the build-in commands like normal commands 
+      or !bangs. </P>
+      <P>PLAY [soundfile] - Plays the given soundfile once. </P>
+      <P>PLAYLOOP [soundfile] - Plays the given soundfile as loop. </P>
+      <P>PLAYSTOP - Stops the currently playing sound. 
+</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>BANGS</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>The Rainmeter can be controlled also with Litestep !Bang-commands. A 
+      bang is a special command that can be executed to change something in the 
+      application. You can use the bangs in the various actions that Rainmeter 
+      has or just run one from command line by giving it to argiument for 
+      Rainmeter.exe. Naturally you can use these from Litestep too.</P>
+      <P>Note that the [] means that you <B>must</B> supply the argument for the 
+      bang (do not include the []-chars). The () mean that the argument is no 
+      necessary.</P>
+      <P>Most !bangs take also the config as an optional parameter. If the 
+      config is defined the bang only applies to that particular config. If it's 
+      not given, the !bang is send to all active configs. Use * as the config's 
+      name to send it to all configs.</P>
+      <P><B>!RainmeterShow (Config)<BR></B>Displays the Rainmeter-window.</P>
+      <P><B>!RainmeterHide (Config)<BR></B>Hides the Rainmeter-window.</P>
+      <P><B>!RainmeterToggle (Config)<BR></B>Toggles the Rainmeter-window.</P>
+      <P><B>!RainmeterRefresh (Config)<BR></B>Reloads the configuration file. 
+      The arguments are optional. If not given the current config is reloaded. 
+      The Config and IniFile must exist in the already loaded list of 
+      configurations.</P>
+      <P><B>!RainmeterRedraw (Config)<BR></B>Forces the redraw of the window. 
+      This also updates all the meters.</P>
+      <P><B>!RainmeterHideMeter</B> <B>[Meter] (Config)<BR></B>Hides the given 
+      meter. Note that hiding meter does not stop the measurement, you also need 
+      to disable the measure if you don't want to spend the extra CPU cycles for 
+      the measuring. </P>
+      <P><B>!RainmeterShowMeter [Meter] (Config)<BR></B>Shows the given meter if 
+      it was hidden.</P>
+      <P><B>!RainmeterToggleMeter</B> <B>[Meter] (Config)<BR></B>Toggles the 
+      visibility of the given meter.</P>
+      <P>!<B>RainmeterMoveMeter [X] [Y] [Meter] (Config)<BR></B>Moves the given 
+      meter (i.e. not the window, but the meter) to a new location.<B> </B></P>
+      <P><B>!RainmeterDisableMeasure [Measure] (Config)<BR></B>Disables the 
+      given measure.</P>
+      <P><B>!RainmeterEnableMeasure [Measure] (Config)<BR></B>Enables the given 
+      measure.</P>
+      <P><B>!RainmeterToggleMeasure [Measure] (Config)<BR></B>Toggles the status 
+      of the given measure (i.e. disabled/enabled).</P>
+      <P><B>!RainmeterActivateConfig [Config] [Ini-file]<BR></B>Activates a new 
+      configuration ini-file. The ini-file is just the name of the file; do not 
+      include the path.</P>
+      <P><B>!RainmeterDeactivateConfig [Config]<BR></B>Deactivates the 
+      configuration ini-file.</P>
+      <P><B>!RainmeterToggleConfig [Config] [Ini-file]<BR></B>Toggles the 
+      configuration ini-file.</P>
+      <P><B>!RainmeterMove [X] [Y] (Config)<BR></B>Moves the window to new 
+      location.</P>
+      <P><B>!RainmeterZPos [POS] (Config)<BR></B>Changes the z-position of the 
+      window. -2 = OnDesktop, -1 = OnBottom, 0 = Normal, 1 = OnTop, 2 = 
+      Topmost.</P>
+      <P><B>!RainmeterAbout<BR></B>Opens the About dialog.</P>
+      <P><B>!RainmeterLsBoxHook [Config]<BR></B>Special bang for lsBox. Note 
+      that you MUST give the name of the config as argument.</P>
+      <P><B>!RainmeterResetStats<BR></B>Resets the statistics.</P>
+      <P>!<B>RainmeterPluginBang "[MeasureName] [Arguments]"</B><BR>Sends a bang 
+      to a plugin. The parameter must be inside quotes. The MeasureName defines 
+      the plugin which handles the plugin. The Arguments depend on the 
+      plugin.</P>
+      <P><B>!Execute<BR></B>Special !bang that can be used to combine several 
+      !bangs together. The !bangs are separated with '[' and ']'-chars. You can 
+      also launch applications with this (!Execute 
+      ["C:\Windows\Notepad.exe"])</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>PLUGINS</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>A Rainmeter plugin is a DLL that exports these functions (it's not 
+      necessary to export all of them):</P>
+      <P>UINT Initialize(HMODULE instance, LPCTSTR iniFile, LPCTSTR section, 
+      UINT id);<BR>void Finalize(HMODULE instance, UINT id);<BR>UINT Update(UINT 
+      id)<BR>double Update2(UINT id)<BR>LPCTSTR GetString(UINT id, UINT 
+      flags)</P>
+      <P>The <I>Initialize</I> function is called when the measure is 
+      initialized. The function returns the maximum value that can be measured. 
+      If the maximum value is unknown the function should return 0. The plugin 
+      can also have it's own settings which can be loaded from the iniFile and 
+      the section given as parameters to the initialize function. the 
+      id-parameter is used to identify individual measures if there are several 
+      of them using the same plugin.</P>
+      <P>The<I> Finalize</I> is called when the measure is deleted. </P>
+      <P>The <I>Update</I> is called once per update period (usually once per 
+      second). The function returns the measured value. The <I>Update2</I> is an 
+      alternative version of the function which can be used if the measure 
+      returns negative values.</P>
+      <P>The <I>GetString</I> is called when the meter needs the value as 
+      string. If this function is not implemented the value returned by the 
+      <I>Update</I> is converted to a string automatically.</P>
+      <P>Check the Rainmeter sources for example how to implement a plugin.</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>ADVANCED CPU</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->This is pretty much the same as the using the 
+      PerfMon to measure the CPU usage excapt that you can filter out processes 
+      or only include some of them.
+      <P></P>
+      <P><B>CPUInclude<BR></B>List of process names that are included in the cpu 
+      measuring. The names are separated with semicolon (";"-char). The include 
+      list overrides the excludes.</P>
+      <P><B>CPUExclude<BR></B>List of process names that are excluded from the 
+      cpu measuring. The names are separated with semicolon (";"-char). The 
+      include list must be empty to exclude something. 
+<!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>MBM5 PLUGIN</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>You need to have MBM5 running in the background when you use this 
+      plugin. The plugin doesn't measure anything it just gets the values from 
+      MBM5. You can get MBM5 from <A 
+      href="http://mbm.livewire.com">http://mbm.livewiredev.com</A>.</P>
+      <P><B>MBM5Type<BR></B>This defines what should be measured. Possible 
+      values are: TEMPERATURE, FAN, MHZ, CPU and VOLTAGE. </P>
+      <P><B>MBM5Number<BR></B>The<B> </B>index of the measured item. E.g. if you 
+      want to measure the temperature of the sensor 2. Note that the values 
+      start from 0.</P>
+      <P><B>MBM5MaxValue</B><BR>The maximum value for the measured item. <!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>PERFMON</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>Use NT's performance monitor to find out the valid values for these 
+      settings. 
+      <P><I>Important note</I>: The names of the objects, counters and instances 
+      need to be in English also in localized versions of Windows.</P>
+      <P><B>PerfMonObject<BR></B>The name of the performance object. E.g. 
+      Memory, Process, Processor, ...</P>
+      <P><B>PerfMonCounter<BR></B>The name of the performance counter. E.g. "% 
+      Processor Time", "Disk Read Bytes/sec", ...</P>
+      <P><B>PerfMonInstance<BR></B>The name of the instance. E.g. "_Total". If 
+      the counter doesn't have any instances you can leave this empty.</P>
+      <P><B>PerfMonDifference<BR></B>If set to 1, the difference between two 
+      updates is measured instead of the actual value. This is useful as many of 
+      the performance values are counters and you usually want to know how much 
+      the counter has increased since last update. <B>Note:</B> This is 1 by 
+      default. You need to set it to 0 if you vant to know the current 
+value.</P>
+      <HR width="40%" color=#000000>
+
+      <P><B><I>Examples</I></B></P>
+      <P>Display how much Litestep process takes CPU (use Scale=100000.0 in TEXT 
+      meter if you want percentual value):</P>
+      <P>[MeasureLitestep]<BR>Measure=Plugin<BR>Plugin=Perfmon.dll<BR>PerfMonObject="Process"<BR>PerfMonCounter="% 
+      Processor Time"<BR>PerfMonInstance=LITESTEP</P>
+      <P>Display the number of running processes:</P>
+      <P>[MeasureProcesses]<BR>Measure=Plugin<BR>Plugin=Perfmon.dll<BR>PerfMonObject="System"<BR>PerfMonCounter="Processes"<BR>PerfMonInstance=""<BR>PerfMonDifference=0</P>
+      <P>Display the disk access in drive C:</P>
+      <P>[MeasureDiskAccess]<BR>Measure=Plugin<BR>Plugin=PerfMon.dll<BR>PerfMonObject=LogicalDisk<BR>PerfMonCounter="Disk 
+      Bytes/sec"<BR>PerfMonInstance=_Total<BR>PerfMonInstance="C:" 
+      <!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>PING PLUGIN</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>This plugin can be used to send ping packets to a server and measure 
+      the network latency. </P>
+      <P></P>
+      <P><B>DestAddress<BR></B>The DNS address or IP-number of the server.</P>
+      <P><B>UpdateRate</B><BR>How often the ping packet will be send to the 
+      server. This relative to the config's overall update rate.</P>
+      <P><B>Timeout</B><BR>Defines the amount of time that the plugin waits for 
+      a reply. The value is in ms (i.e. value 30000 means 30 secs).</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>POWER PLUGIN</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>This plugin can be used to measure battery status and the current MHz 
+      on laptops. Note that not all laptops support this (or all the values). 
+      </P>
+      <P></P>
+      <P><B>PowerState</B></P>
+      <UL>
+        <LI>ACLINE - measures if the power is hooked to ac-line (0/1). 
+        <LI>STATUS - measures the status of the battery (no battery, charging, 
+        critical, low, high). 
+        <LI>STATUS2 - same as STATUS except that the BatteryFlag in 
+        SYSTEM_POWER_STATUS is returned as is. 
+        <LI>LIFETIME - measures the lifetime of the battery. 
+        <LI>PERCENT - measures percentual lifetime. 
+        <LI>MHZ - measures the current CPU MHz. </LI></UL>
+      <P><B>Format</B><BR>This is the same as in TIME-measure. It is used only 
+      when PowerState is LIFETIME.</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>QUOTE</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>This plugin has two different uses: it can display a random string from 
+      a text file or it can select a random file from a folder which can be 
+      displayed with the IMAGE meter (if it's an image that is).</P>
+      <P></P>
+      <P><B>PathName</B><BR>Path to a folder or a file..If it's a folder, the 
+      plugin returns the file name of one of the files in it. If it's a file, 
+      the plugin reads a random part of text from it. The file can be ANSI or 
+      UNICODE.</P>
+      <P><B>Separator</B><BR>A string that separates the text. The default value 
+      is \n (i.e. newline).</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>RESMON</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>Requires Windows&nbsp;XP SP1 or newer. The plugin was originally made 
+      by Daedalus.</P>
+      <P><B>ResCountType</B></P>
+      <UL>
+        <LI>GDI - Measures the number of GDI objects. 
+        <LI>USER- Measures the number of user objects. 
+        <LI>HANDLE - Measures the number of open handles. 
+        <LI>WINDOW - Measures the number of windows in the system. </LI></UL>
+      <P><B>ProcessName<BR></B>The name of the process that is measured. E.g. 
+      <I>ProcessName=Litestep.exe</I> would measure only Litestep's resources. 
+      Leave this empty if you want to measure all resources in the system. This 
+      has no effect if the ResCountType is set to WINDOW. 
+    <!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>SPEEDFAN</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>This plugin can read the values measured by <A 
+      href="http://www.almico.com/speedfan.php">SpeedFan</A>. You need to have 
+      SpeedFan running for this plugin to work since it doesn't do any measuring 
+      itself.</P>
+      <P></P>
+      <P><B>SpeedFanType</B></P>
+      <UL>
+        <LI>TEMPERATURE - returns the temperature value. 
+        <LI>FAN - returns the fan speed. 
+        <LI>VOLTAGE - returns the voltage value. </LI></UL>
+      <P><B>SpeedFanNumber</B><BR>This defines the index for the returned value. 
+      The indexing starts from 0 so if you want to return e.g. the second 
+      temperature value use SpeedFanNumber=1.</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>SYSINFO</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>This plugin returns various information about your system.</P>
+      <P><I>Note</I>: This measure can be used only with the string meter.</P>
+      <P><B>SysInfoType<BR></B><FONT size=3>Type of the system information. The 
+      valid values are:</FONT></P>
+      <UL>
+        <LI>COMPUTER_NAME 
+        <LI>USER_NAME 
+        <LI>SCREEN_SIZE 
+        <LI>RAS_STATUS 
+        <LI>OS_VERSION 
+        <LI>ADAPTER_DESCRIPTION (<I>SysInfoData</I> specifies the adapter) 
+        <LI>NET_MASK (<I>SysInfoData</I> specifies which net mask, if there are 
+        several) 
+        <LI>IP_ADDRESS (<I>SysInfoData</I> specifies which ip address, if there 
+        are several) 
+        <LI>GATEWAY_ADDRESS (<I>SysInfoData</I> specifies the adapter) 
+        <LI>HOST_NAME 
+        <LI>DOMAIN_NAME 
+        <LI>DNS_SERVER </LI></UL>
+      <P><B>SysInfoData<BR></B>Additional data that some of the SysInfoType 
+      items require. This is always a number. <!-- CLIP --></P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT size=6><B>WEB 
+      PARSER</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>WebParser reads information from webpages. The plugin uses <A 
+      href="http://en.wikipedia.org/wiki/Regular_expression">regular 
+      expressions</A> to parse the web page which allows it to extract 
+      information pretty much from any page. The plugin can be used e.g. to get 
+      the current TV shows, weather conditions, stock exchange values, news and 
+      basically anything that is on the net. The negative side is that the 
+      regular expressions might look rather complex especially if you're not 
+      familiar with programming languages.</P>
+      <P><B>Url<BR></B>Url to the file to be downloaded and parsed. The Url can 
+      also be another WebParser-measure, in which case the already downloaded 
+      and parsed information can be reused (e.g. when displaying different 
+      StringIndex on the same page). To do this just give the name of the 
+      measure in the Url, like this: Url=[MeasureSlashDot]</P>
+      <P><B>RegExp<BR></B>The regular expression used in parsing. The plugin 
+      uses <A href="http://www.pcre.org">Perl Compatible Regular 
+      Expressions</A>, so check the <A 
+      href="http://www.perl.com/doc/manual/html/pod/perlre.html">Perl docs</A> 
+      for syntax and more info.</P>
+      <P><B>FinishAction<BR></B>Action that is executed when the page has been 
+      downloaded and the parsing is done.</P>
+      <P><B>StringIndex<BR></B>Defines which string from the regexp this measure 
+      returns. You can get the correct index values by setting the Debug=1, 
+      which will add all matched strings to the log-file.</P>
+      <P><B>UpdateRate<BR></B>The rate how often the webpage is downloaded. This 
+      is relative to the config's main update rate. It is advisable to limit the 
+      rate so that you're not flooding the server with constant requests. The 
+      web server admins will not like it and you probably get banned from the 
+      server altogether if you try to poll the server too often. So, if the main 
+      update rate is 1000 (i.e. one second, which is the default) set this e.g. 
+      to 60 to read the webpage once per minute.</P>
+      <P><B>Debug<BR></B>Set this to 1 and the log file will contain some useful 
+      debug information. Value 2 dumps the downloaded webpage to 
+      C:\WebParserDump.txt. This can be useful since some web servers send 
+      different information depending which client requests it. Remember to 
+      remove this from your config once you have it working correctly.</P>
+      <P><B>Download<BR></B>If set to 1, the <B>Url</B> is downloaded to a 
+      temporary folder and the name to the file is returned as string value. The 
+      measure can be bound to a IMAGE meter to download images from web and show 
+      them. If the RegExp is defined the parsed string is interpreted as a link 
+      to the downloaded image.</P>
+      <P><B>ErrorString<BR></B>String that is returned in case there is a parse 
+      error.</P>
+      <HR width="40%" color=#000000>
+
+      <P><B><I>Examples</I></B></P>
+      <P>Display the title and first item from Slashdot's RSS feed.</P>
+      <P>[MeasureRSSTitle]<BR>Measure=Plugin<BR>Plugin=Plugins\WebParser.dll<BR>UpdateDivider=3600<BR>Url=http://slashdot.org/slashdot.rdf<BR>RegExp="(?siU)&lt;title&gt;(.+)&lt;/title&gt;(.+)&lt;item(.+)&lt;title&gt;(.+)&lt;/title&gt;"<BR>StringIndex=1<BR>FinishAction=!RainmeterRedraw<BR><BR>[MeasureRSS]<BR>Measure=Plugin<BR>Plugin=Plugins\WebParser.dll<BR>Url=[MeasureRSSTitle]<BR>StringIndex=4<BR>Substitute="&amp;amp;":"&amp;"</P>
+      <P><BR>Download the current weather map from Finnish Meteorological 
+      Institute.</P>
+      <P>[MeasureDL]<BR>Measure=Plugin<BR>Plugin=Plugins\WebParser.dll<BR>UpdateRate=1800<BR>Url=http://www.fmi.fi/saa/sadejapi_5.html?selected=7<BR>RegExp="(?siU)ennuste" 
+      SRC=\"(.*)\"&gt;&lt;/TD&gt;"<BR>FinishAction=!RainmeterRedraw<BR>StringIndex=1<BR>Download=1<BR><BR>[MeterImage]<BR>Meter=IMAGE<BR>MeasureName=MeasureDL<BR>X=0<BR>Y=0<BR>W=400<BR>H=300</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>WINDOW MESSAGE</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>This plugin can be used to send and receive information from other 
+      applications. It can send window messages to other applications and show 
+      the result. The plugin can be used for example to control Winamp or some 
+      similar media players.</P>
+      <P></P>
+      <P><B>WindowName</B><BR>The name of the window. This is used to identify 
+      the window. It's not necessary to set this if the WindowClass is set.</P>
+      <P><B>WindowClass</B><BR>The class of the window. This is used to identify 
+      the window. It's not necessary to set this if the WindowName is set.</P>
+      <P><B>WindowMessage</B><BR>This is the message to be send to the window. 
+      You need to define 3 parameters to where the first one is the message and 
+      the next ones are wParam and lParam. The values are unsigned decimal 
+      integers. The measure returns the value returned by the 
+      SendMessage()-function. If the WindowMessage is not given the measure 
+      returns the window's current title.</P>
+      <P>It's also possible to send messages to applications with 
+      !RainmeterPluginBang. The arguments are similar as in WindowMessages. You 
+      need to define the name of the measure (this identifies the window), 
+      "SendMessage", the message number and wParam and lParam. See examples 
+      below.</P>
+      <HR width="40%" color=#000000>
+
+      <P><B><I>Examples</I></B></P>
+      <P>This returns the name of the song that is playing in Winamp.
+      <P>[MeasureWinamp]<BR>Measure=Plugin<BR>Plugin=Plugins\WindowMessagePlugin.dll<BR>WindowClass=Winamp 
+      v1.x<BR>Substitute="[Paused]":""," - Winamp":""<BR>&nbsp;
+      <P>Check if Winamp is playing, or not. This returns 0 if it's not playing, 
+      1 if it is playing and 3 if it's paused.
+      <P>[MeasureWinampPlaying]<BR>Measure=Plugin<BR>Plugin=Plugins\WindowMessagePlugin.dll<BR>WindowClass=Winamp 
+      v1.x<BR>WindowMessage=1024 0 104<BR>&nbsp;
+      <P>Show song progress. The&nbsp; [MeasureWinampDuration] will return the 
+      current song position as a value between 0 and 1. You can use for example 
+      the BAR-meter to display the 
+      value.<BR><BR>[MeasureWinampFull]<BR>Measure=Plugin<BR>Plugin=Plugins\WindowMessagePlugin.dll<BR>WindowClass=Winamp 
+      v1.x<BR>WindowMessage=1024 1 
+      105<BR><BR>[MeasureWinampCurr]<BR>Measure=Plugin<BR>Plugin=Plugins\WindowMessagePlugin.dll<BR>WindowClass=Winamp 
+      v1.x<BR>WindowMessage=1024 0 
+      105<BR><BR>[MeasureWinampDuration]<BR>Measure=Calc<BR>Formula=(MeasureWinampCurr&lt;=0)?0:(MeasureWinampCurr/(MeasureWinampFull*1000+1))
+      <P><B>Bangs:</B>
+      <P><I>Prev</I>: !RainmeterPluginBang "MeasureWinamp SendMessage 273 40044 
+      0"<BR><I>Play</I>: !RainmeterPluginBang "MeasureWinamp SendMessage 273 
+      40045 0"<BR><I>Pause</I>: !RainmeterPluginBang "MeasureWinamp SendMessage 
+      273 40046 0"<BR><I>Stop</I>: !RainmeterPluginBang "MeasureWinamp 
+      SendMessage 273 40047 0"<BR><I>Next</I>: !RainmeterPluginBang 
+      "MeasureWinamp SendMessage 273 40048 0"<BR>&nbsp;
+      <P>Check the wa_ipc.h in WinampSDK for more messages values and their 
+      parameters.<BR>&nbsp;</P></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>WIRELESSINFO</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>The WirelessInfo plugin was developed at some cost of time and money, 
+      but is being freely distributed. If you find the plugin valuable, please 
+      express your gratitude by donating a small amount ($1, $2, $5, whatever 
+      you wish) by clicking on the follow PayPal link. 
+      <FORM action=https://www.paypal.com/cgi-bin/webscr method=post><INPUT 
+      type=hidden value=_xclick name=cmd> <INPUT type=hidden 
+      value=christh21@comcast.net name=business> <INPUT type=hidden value=1 
+      name=no_note> <INPUT type=hidden value="Rainmeter WirelessInfo plugin" 
+      name=item_name> <INPUT type=hidden value=USD name=currency_code> <INPUT 
+      type=hidden value=0 name=tax> <INPUT type=hidden value=US name=lc> <INPUT 
+      type=image alt="Make payments with PayPal - it's fast, free and secure!" 
+      src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border=0 
+      name=submit> </FORM>Send any questions, comments or skins that use the 
+      plugin to <A 
+      href="mailto:christh21@comcast.net">christh21@comcast.net</A>.</P>
+      <P><B>WirelessInfoType</B></P>
+      <UL>
+        <LI>STATUS - measures the connection status (0 - disconnected / 1 - 
+        connected) 
+        <LI>CONNECTION - returns connection type (0 - Ad-hoc / 1 - Access Point) 
+
+        <LI>SSID - measures the SSID of the current connection (string) 
+        <LI>BANDWIDTH - measures the bandwidth of the current connection 
+        <LI>STRENGTH - signal strength in percent 
+        <LI>WEP - measures the status of WEP (0 - no WEP / 1 - WEP enabled) 
+      </LI></UL>
+      <P><B>WirelessInfoData</B><BR>Selects the wireless network adapter 
+      (usually 0)</P>
+      <P><B>WirelessMin</B><BR>Used only in STRENGTH meters. Specifies the 
+      minimum RSSI value your network adapter reports. A value of 100 is a 
+      minimum RSSI of -100dBm.</P>
+      <P><B>WirelessMax</B><BR>Used only in STRENGTH meters. Specifies the 
+      maximum RSSI value your network adapter reports. A value of 50 is a 
+      maxiumum RSSI of -50dBm.</P>
+      <P>To find the Min/Max values for your adapter, use a program such as 
+      "NetStumbler" to view the dBm levels that your network card reports at 
+      different signal strengths. For most adapters use WirelessMin=100 and 
+      WirelessMax=50. These values must be correct in order to display accurate 
+      signal strength percentages.</P>
+      <HR width="40%" color=#000000>
+
+      <P><I><B>Installing the WirelessInfo plugin</B></I> </P>
+      <OL>
+        <LI>In Network Connections UI, select an adapter and open Properties. 
+        <P>Click Install, then Protocol, then Add, and then Have disk. <BR>Then 
+        point to the location of the wirelessuio.inf and driver (in the 
+        Rainmeter/Plugins directory). </P>
+        <P>Select Wireless Usermode I/O Protocol and click OK. </P>
+        <LI>Start the protocol. Click Start, then Run, and type "Net start 
+        wirelessuio". 
+        <LI>If the plugin stops reporting data, close Rainmeter and run the 
+        following commands:<BR>"net stop wirelessuio", then "net stop 
+        wirelessuio". </LI></OL>
+      <HR width="40%" color=#000000>
+
+      <P><B><I>Examples</I></B></P>
+      <P>[MeasureStrength]<BR>Measure=Plugin<BR>Plugin=Plugins\WirelessInfo.dll<BR>WirelessInfoType=STRENGTH<BR>WirelessInfoData=0<BR>WirelessMin=90 
+      ; -90dBm<BR>WirelessMax=50 ; -50dBm</P>
+      <P></P>[MeasureSSID]<BR>Measure=Plugin<BR>Plugin=Plugins\WirelessInfo.dll<BR>WirelessInfoType=SSID<BR>WirelessInfoData=0 
+<!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>CONTACT</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>The latest version will be found from my <A 
+      href="http://www.rainmeter.net">http://www.rainmeter.net</A>. You may also 
+      send comments and bug-reports to <A href="mailto:rainy@iki.fi">author</A> 
+      but before you contact me with questions check the <A 
+      href="http://www.ipi.fi/cgi-bin/cgiwrap/rainy/Forum/ikonboard.cgi?act=ST;f=11;t=24">FAQ</A> 
+      and the <A 
+      href="http://www.ipi.fi/cgi-bin/cgiwrap/rainy/Forum/ikonboard.cgi?act=SC;c=3">forum</A>. 
+      </P>
+      <P>Please put the name of the product (i.e. Rainmeter) in the 
+      subject-field of the mail. It may be useful if you write the version of 
+      the product also. If you are reporting a bug, please try to be as exact as 
+      possible when describing the symptoms. Also write down the details of your 
+      system (like OS version, Rainmeter build, and so on).</P>
+      <P>It might also be helpful if you include the log-file that Rainmeter 
+      creates when sending bug-reports. On standalone version you can activate 
+      the log-file by creating an empty file called Rainmeter.log into the same 
+      forder where Rainmeter.dll is. If Rainmeter is ran as Litestep's plugin 
+      the log is written with into the Litestep's logfile (just activate it in 
+      your step.rc).</P><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>LICENSE</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP --><PRE>		    GNU GENERAL PUBLIC LICENSE
+		       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+                       59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+			    Preamble
+
+  The licenses for most software are designed to take away your
+freedom to share and change it.  By contrast, the GNU General Public
+License is intended to guarantee your freedom to share and change free
+software--to make sure the software is free for all its users.  This
+General Public License applies to most of the Free Software
+Foundation's software and to any other program whose authors commit to
+using it.  (Some other Free Software Foundation software is covered by
+the GNU Library General Public License instead.)  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+this service if you wish), that you receive source code or can get it
+if you want it, that you can change the software or use pieces of it
+in new free programs; and that you know you can do these things.
+
+  To protect your rights, we need to make restrictions that forbid
+anyone to deny you these rights or to ask you to surrender the rights.
+These restrictions translate to certain responsibilities for you if you
+distribute copies of the software, or if you modify it.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must give the recipients all the rights that
+you have.  You must make sure that they, too, receive or can get the
+source code.  And you must show them these terms so they know their
+rights.
+
+  We protect your rights with two steps: (1) copyright the software, and
+(2) offer you this license which gives you legal permission to copy,
+distribute and/or modify the software.
+
+  Also, for each author's protection and ours, we want to make certain
+that everyone understands that there is no warranty for this free
+software.  If the software is modified by someone else and passed on, we
+want its recipients to know that what they have is not the original, so
+that any problems introduced by others will not reflect on the original
+authors' reputations.
+
+  Finally, any free program is threatened constantly by software
+patents.  We wish to avoid the danger that redistributors of a free
+program will individually obtain patent licenses, in effect making the
+program proprietary.  To prevent this, we have made it clear that any
+patent must be licensed for everyone's free use or not licensed at all.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+		    GNU GENERAL PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. This License applies to any program or other work which contains
+a notice placed by the copyright holder saying it may be distributed
+under the terms of this General Public License.  The "Program", below,
+refers to any such program or work, and a "work based on the Program"
+means either the Program or any derivative work under copyright law:
+that is to say, a work containing the Program or a portion of it,
+either verbatim or with modifications and/or translated into another
+language.  (Hereinafter, translation is included without limitation in
+the term "modification".)  Each licensee is addressed as "you".
+
+Activities other than copying, distribution and modification are not
+covered by this License; they are outside its scope.  The act of
+running the Program is not restricted, and the output from the Program
+is covered only if its contents constitute a work based on the
+Program (independent of having been made by running the Program).
+Whether that is true depends on what the Program does.
+
+  1. You may copy and distribute verbatim copies of the Program's
+source code as you receive it, in any medium, provided that you
+conspicuously and appropriately publish on each copy an appropriate
+copyright notice and disclaimer of warranty; keep intact all the
+notices that refer to this License and to the absence of any warranty;
+and give any other recipients of the Program a copy of this License
+along with the Program.
+
+You may charge a fee for the physical act of transferring a copy, and
+you may at your option offer warranty protection in exchange for a fee.
+
+  2. You may modify your copy or copies of the Program or any portion
+of it, thus forming a work based on the Program, and copy and
+distribute such modifications or work under the terms of Section 1
+above, provided that you also meet all of these conditions:
+
+    a) You must cause the modified files to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+    b) You must cause any work that you distribute or publish, that in
+    whole or in part contains or is derived from the Program or any
+    part thereof, to be licensed as a whole at no charge to all third
+    parties under the terms of this License.
+
+    c) If the modified program normally reads commands interactively
+    when run, you must cause it, when started running for such
+    interactive use in the most ordinary way, to print or display an
+    announcement including an appropriate copyright notice and a
+    notice that there is no warranty (or else, saying that you provide
+    a warranty) and that users may redistribute the program under
+    these conditions, and telling the user how to view a copy of this
+    License.  (Exception: if the Program itself is interactive but
+    does not normally print such an announcement, your work based on
+    the Program is not required to print an announcement.)
+
+These requirements apply to the modified work as a whole.  If
+identifiable sections of that work are not derived from the Program,
+and can be reasonably considered independent and separate works in
+themselves, then this License, and its terms, do not apply to those
+sections when you distribute them as separate works.  But when you
+distribute the same sections as part of a whole which is a work based
+on the Program, the distribution of the whole must be on the terms of
+this License, whose permissions for other licensees extend to the
+entire whole, and thus to each and every part regardless of who wrote it.
+
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written entirely by you; rather, the intent is to
+exercise the right to control the distribution of derivative or
+collective works based on the Program.
+
+In addition, mere aggregation of another work not based on the Program
+with the Program (or with a work based on the Program) on a volume of
+a storage or distribution medium does not bring the other work under
+the scope of this License.
+
+  3. You may copy and distribute the Program (or a work based on it,
+under Section 2) in object code or executable form under the terms of
+Sections 1 and 2 above provided that you also do one of the following:
+
+    a) Accompany it with the complete corresponding machine-readable
+    source code, which must be distributed under the terms of Sections
+    1 and 2 above on a medium customarily used for software interchange; or,
+
+    b) Accompany it with a written offer, valid for at least three
+    years, to give any third party, for a charge no more than your
+    cost of physically performing source distribution, a complete
+    machine-readable copy of the corresponding source code, to be
+    distributed under the terms of Sections 1 and 2 above on a medium
+    customarily used for software interchange; or,
+
+    c) Accompany it with the information you received as to the offer
+    to distribute corresponding source code.  (This alternative is
+    allowed only for noncommercial distribution and only if you
+    received the program in object code or executable form with such
+    an offer, in accord with Subsection b above.)
+
+The source code for a work means the preferred form of the work for
+making modifications to it.  For an executable work, complete source
+code means all the source code for all modules it contains, plus any
+associated interface definition files, plus the scripts used to
+control compilation and installation of the executable.  However, as a
+special exception, the source code distributed need not include
+anything that is normally distributed (in either source or binary
+form) with the major components (compiler, kernel, and so on) of the
+operating system on which the executable runs, unless that component
+itself accompanies the executable.
+
+If distribution of executable or object code is made by offering
+access to copy from a designated place, then offering equivalent
+access to copy the source code from the same place counts as
+distribution of the source code, even though third parties are not
+compelled to copy the source along with the object code.
+
+  4. You may not copy, modify, sublicense, or distribute the Program
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, sublicense or distribute the Program is
+void, and will automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you under
+this License will not have their licenses terminated so long as such
+parties remain in full compliance.
+
+  5. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Program or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Program (or any work based on the
+Program), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Program or works based on it.
+
+  6. Each time you redistribute the Program (or any work based on the
+Program), the recipient automatically receives a license from the
+original licensor to copy, distribute or modify the Program subject to
+these terms and conditions.  You may not impose any further
+restrictions on the recipients' exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties to
+this License.
+
+  7. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Program at all.  For example, if a patent
+license would not permit royalty-free redistribution of the Program by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Program.
+
+If any portion of this section is held invalid or unenforceable under
+any particular circumstance, the balance of the section is intended to
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system, which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a licensee cannot
+impose that choice.
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.
+
+  8. If the distribution and/or use of the Program is restricted in
+certain countries either by patents or by copyrighted interfaces, the
+original copyright holder who places the Program under this License
+may add an explicit geographical distribution limitation excluding
+those countries, so that distribution is permitted only in or among
+countries not thus excluded.  In such case, this License incorporates
+the limitation as if written in the body of this License.
+
+  9. The Free Software Foundation may publish revised and/or new versions
+of the General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+Each version is given a distinguishing version number.  If the Program
+specifies a version number of this License which applies to it and "any
+later version", you have the option of following the terms and conditions
+either of that version or of any later version published by the Free
+Software Foundation.  If the Program does not specify a version number of
+this License, you may choose any version ever published by the Free Software
+Foundation.
+
+  10. If you wish to incorporate parts of the Program into other free
+programs whose distribution conditions are different, write to the author
+to ask for permission.  For software which is copyrighted by the Free
+Software Foundation, write to the Free Software Foundation; we sometimes
+make exceptions for this.  Our decision will be guided by the two goals
+of preserving the free status of all derivatives of our free software and
+of promoting the sharing and reuse of software generally.
+
+			    NO WARRANTY
+
+  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+
+  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+		     END OF TERMS AND CONDITIONS
+
+
+</PRE><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=56 
+      src="images/topleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=bottom align=left background=images/top.gif><FONT 
+      size=6><B>HISTORY</B></FONT></TD>
+    <TD width=56><IMG height=56 
+      src="images/topright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top align=right width=56 background=images/left.gif>&nbsp;</TD>
+    <TD vAlign=top align=middle bgColor=#dbccb1>
+      <DIV align=left><!-- CLIP -->
+      <P>20 JUL 2005 (Version 0.13 ß)</P>
+      <UL>
+        <LI>Compiled as Unicode so this is Win2k/WinXP only from now on. 
+        <LI>Removed wharf interface. Use !RainmeterLsBoxHook instead. 
+        <LI>Some code optimizations. 
+        <LI>Updated the PCRE-library in WebParser. 
+        <LI>WebParser: Debug=2 Dumps the downloaded data to a file 
+        (C:\WebParserDump.txt). 
+        <LI>Fixed crash bug when plugins were used as the tray measure. 
+        <LI>UpdateDivider didn't work in meters. Fixed. 
+        <LI>Empty substitutes are now also possible. 
+        <LI>Added button meter, which should make button creation easier. 
+        <LI>Removed size limitation from the section names. It should be now 
+        possible to have as many meters and measures in the skins as you like. 
+        <LI>Meter background can be drawn with a gradient fill (It's quite slow 
+        so don't overuse it). 
+        <LI>R (i.e capital r) in the relative position makes the meter relative 
+        to the bottom (or right) edge of the previous meter. 
+        <LI>Created a quote plugin for random texts and images. 
+        <LI>Created a window message plugin that allows to control other 
+        applications (e.g. Winamp). 
+        <LI>Created a ping plugin for network status checking. 
+        <LI>STRING meter calculates its size automatically. 
+        <LI>The window size can be recalculated dynamically with 
+        DynamicWindowSize. 
+        <LI>It's possible to use the string value of the measures in the 
+        actions. 
+        <LI>Quoted paths work with !Execute-bang 
+        <LI>MaxValue works in all plugins. 
+        <LI>Configs can use environment strings. 
+        <LI>Added fade effects. Set FadeDuration=0 to disable them. 
+        <LI>The memory measures can show &gt;4GB values correctly. 
+        <LI>The tray histogram's colors can be changed. 
+        <LI>Tray can show also a bitmap meter. 
+        <LI>Snap to Edges snaps to other meter windows too 
+        <LI>Added Angle to string meter. 
+        <LI>Fixed the 4GB addition bug with cumulative net measures (I hope :-) 
+        <LI>Font size does not change anymore with the screen DPI. 
+        <LI>Added Format to Uptime measure. 
+        <LI>Added BackgroundMargins and scalable background images (Use 
+        BackgroundMode=3) 
+        <LI>WebParser checks references only in the same config file and not in 
+        all active configs. 
+        <LI>Shift, alt and ctrl-keys don't disable mouse events anymore (except 
+        the "Hide on mouse over") 
+        <LI>The drag area can be defined with DragMargins 
+        <LI>Added Flip to bar meter. 
+        <LI>Added "Keep on Screen"-option which makes the window to stay inside 
+        the monitor. 
+        <LI>ClickThrough can be disabled with Shift-key. 
+        <LI>Added ErrorString to WebParser. 
+        <LI>Negative values should work with the MBM5 plugin. 
+        <LI>Added IfEqualValue and IfEqualAction. 
+        <LI>Added Label to the DiskSpace measure which will return the drive's 
+        label as string. 
+        <LI>Mouse clicks to the tray icon can execute bangs now. 
+        <LI>The about dialog shouldn't have a scrolling problem anymore. 
+</LI></UL>
+      <P>13 AUG 2004 (Version 0.12 ß)</P>
+      <UL>
+        <LI>Fixed !RainmeterLsBoxHook. 
+        <LI>Position changing from the menu works a bit better now. 
+        <LI>Mouse over actions didn't work unless the window was set to 
+        draggable. Fixed. 
+        <LI>Added automatic update checking (it can be enabled from the about 
+        dialog). 
+        <LI>Sending bangs to deactivated config shouldn't crash Rainmeter 
+        anymore. 
+        <LI>Fixed a typo: ValueReminder -&gt; ValueRemainder (the old one works 
+        still too) 
+        <LI>Added LineStart to the roundline-meter. </LI></UL>
+      <P>10 JUL 2004 (Version 0.11 ß)</P>
+      <UL>
+        <LI>The OnDesktop setting wasn't read from the config file correctly. 
+        Fixed. 
+        <LI>Meter position can be defined relatively to the previous meter by 
+        adding 'r' to the end if the value (e.g. X=10r). 
+        <LI>Fixed autoscaling with NumOfDecimals=0. 
+        <LI>Added Format to LIFETIME in PowerPlugin. 
+        <LI>Added STATUS2 to PowerPlugin, which is the same as STATUS except 
+        that the BatteryFlag in SYSTEM_POWER_STATUS is returned as is. 
+        <LI>Fixed finalization in the plugins. 
+        <LI>Calc-measure's Counter is separate for each active config. 
+        <LI>Fixed TrayIcon. 
+        <LI>Added handling of MaxValue to WebParser. 
+        <LI>IMAGE meter's W and H can be used to scale the image. 
+        <LI>Width of the STRING meter is handled correctly for right and center 
+        aligned text. 
+        <LI>Mouse leave checks transparent pixels. 
+        <LI>The WebParser can be now used to download images from the net. 
+        <LI>Refresh all updates the skin-list so it's not necessary to restart 
+        Rainmeter anymore when installing new skins. 
+        <LI>Fixed a crash bug with HISTOGRAM meter. 
+        <LI>All substitute strings were not used always. Fixed. 
+        <LI>Added "Show Log File" to context menu. 
+        <LI>Spaces in config names should now work correctly. Use quotes around 
+        the name in !bangs. 
+        <LI>Use * as config name in bangs to send the command to all active 
+        configs. 
+        <LI>Added !RainmeterToggleConfig-bang. 
+        <LI>Added BarBorder to the BAR-meter. 
+        <LI>Rainmeter reads now the whole folder structure of the Skins-dir 
+        (i.e. skins can be placed into subfolders). 
+        <LI>Date for local time wasn't calculated correctly. Fixed. </LI></UL>
+      <P>5 JUN 2004 (Version 0.10 ß)</P>
+      <UL>
+        <LI>Fixed a bug in PowerPlugin (the max value of STATUS was set 
+        incorrectly). 
+        <LI>Inverted measures sometimes gave negative values. Fixed. 
+        <LI>MBM5plugin's MHZ didn't work. Fixed. 
+        <LI>Added CPU speed measure into the PowerPlugin too. This one measures 
+        the current MHz of the processor. 
+        <LI>Fixed a memory leak in Perfmon and in AdvancedCPU plugins. 
+        <LI>Improved the about dialog. 
+        <LI>Created ROTATOR meter, which rotates images. 
+        <LI>Added menu items for config &amp; skin editing (opens the ini-file 
+        in editor). 
+        <LI>Added TimeZone and DaylightSavingTime to Time measure. 
+        <LI>Most of the values are now doubles instead of integers. This also 
+        means that there might be some inaccuracy with very large values (e.g. 
+        diskspace). 
+        <LI>MaxValue and MinValue can be defined for all measures. 
+        <LI>Time measure converts the Format to value (e.g. if Format=%S, a 
+        meter bound to it shows values from 0 to 59). 
+        <LI>MaxRegValue is gone. Use MaxValue instead. 
+        <LI>Sysinfo plugin detects now Windows 2003 too. 
+        <LI>Variables can be defined in [Variables] section for 'easy' 
+        customization of the configs. 
+        <LI>Added possibility to change the string values with substitute 
+        strings. 
+        <LI>Meter's transparency can be changed with AlphaValue. 
+        <LI>Added a click through feature (works only with native transparency). 
+
+        <LI>Added Total to FreeDiskSpace and the memory measures. 
+        <LI>Added LineWidth to the Line meter. 
+        <LI>Added Flip to Histogram and Line meters. 
+        <LI>Made the string meter multibindable. Several values can be displayed 
+        with Text-keyword. 
+        <LI>Added MouseOverAction and MouseLeaveAction to the meters and main 
+        window. 
+        <LI>Implemented Calc measure, which can calculate math formulas. The 
+        measures can be used as variables. 
+        <LI>Added Solid to the ROUNDLINE meter, which draws a pie. 
+        <LI>Moved the Update setting from Rainmeter.ini to the skin's ini-file 
+        so that skin can determine it's update speed. 
+        <LI>AverageSize can be used to measures an average value (the parameter 
+        is the value window size) 
+        <LI>UpdateDivider works for meters too. 
+        <LI>If the image meter is bound to a measure it tries to load the image 
+        named after the value (that is returned as string). 
+        <LI>Added !RainmeterResetStats-bang. 
+        <LI>Fixed !RainmeterZPos-bang when executed without Litestep. 
+        <LI>Added ClipString to the string meter. 
+        <LI>AlwaysOnTop=2 keeps the window on top of other topmost windows (like 
+        to taskbar). 
+        <LI>AlwaysOnTop=-2 keeps the window on desktop. 
+        <LI>DesktopWorkArea can be used to change the desktop's work area. 
+        <LI>String meter displays the battery time in HH:MM:SS-format (or 
+        "Unknown", if it not supported) 
+        <LI>Removed !RainmeterChangeConfig and added !RainmeterActivateConfig 
+        and !RainmeterDeactivateConfig 
+        <LI>Added a tray icon. It can be bound to a [TrayMeasure] in 
+        Rainmeter.ini. 
+        <LI>The tray icon can be disabled with TrayIcon=0. 
+        <LI>Meters can be moved with !RainmeterMoveMeter. 
+        <LI>Window position can be overridden with RainmeterWindowX and 
+        RainmeterWindowY in step.rc. 
+        <LI>Configs can use AppVersion to inform that they need a specific 
+        version of Rainmeter to run. 
+        <LI>The config editor can be changed with ConfigEditor=editor.exe in 
+        Rainmeter.ini (don't use spaces in the filename). 
+        <LI>New Help! </LI></UL>
+      <P>9 FEB 2003 (Version 0.9 ß)</P>
+      <UL>
+        <LI>Fixed a bug in the ini-file parsing routine. 
+        <LI>Created a PowerPlugin for laptop battery information. 
+        <LI>Selecting the network interface didn't work. Fixed. 
+        <LI>The general config and skin's config are separated into different 
+        ini-files. 
+        <LI>Added RainmeterSkinPath step.rc command, which sets the path to the 
+        skin folders. 
+        <LI>Skins are read from Skins-folder by default (instead of the main 
+        folder). 
+        <LI>The about dialog now shows all the active measures. 
+        <LI>Removed GatherStatistics. Stats are now always gathered if a measure 
+        supports that. 
+        <LI>Added Cumulative to net meters. 
+        <LI>Added AntiAlias to line meter and string meter. 
+        <LI>All colors can now have 4 parameters, where the last one is the 
+        alpha value. 
+        <LI>Added a round line meter that can be used draw analog VU-meters and 
+        such. 
+        <LI>Added Autoscale to the histogram meter. 
+        <LI>Added support for native W2k/XP transparency. 
+        <LI>Implemented a median filter in the automatic max value tracker to 
+        strip out the spikes. 
+        <LI>!Execute bang works now also with the standalone version of 
+        Rainmeter. 
+        <LI>Added BackgroundMode option. 
+        <LI>Added SolidColor &amp; BevelType options to the meters and the main 
+        window for a solid color background. 
+        <LI>Added few new bangs: !RainmeterMove, !RainmeterZPos, 
+        !RainmeterAbout, !RainmeterRedraw and !RainmeterLsBoxHook. 
+        <LI>The string meter can be used to draw normal text if it's not bound 
+        to anything (just use the Prefix/Postfix). 
+        <LI>Added AllowNegativeCoordinates option to allow the use of negative 
+        coordinates. 
+        <LI>Snapping now works on all monitors (thanks to Owain Cleaver for the 
+        patch). 
+        <LI>Fixed the MBM5plugin to work with the newer version of Motherboard 
+        Monitor. 
+        <LI>Added CPU and MHZ to the MBM5plugin. </LI></UL>
+      <P>30 JUN 2002 (Version 0.8 ß)</P>
+      <UL>
+        <LI>Rainmeter is not anymore dependant on lsapi.dll. It only uses 
+        lsapi.dll's functions if ran as Litestep plugin. 
+        <LI>The position is not updated to the ini-file if the file has changed. 
+
+        <LI>Added possibility to choose the measured network interface. 
+        <LI>Negative coords were saved as very high positive values. Now they 
+        should be saved as zero. 
+        <LI>Added a autoscaling line meter that can display multiple histograms. 
+
+        <LI>Added RainmeterCurrentConfig and RainmeterCurrentConfigIni step.rc 
+        commands that can used to set a specific config. 
+        <LI>Added MBM5MaxValue for the MBM5 plug-in. 
+        <LI>Fixed a bug that didn't reset the AlwaysOnTop state of the window 
+        after refresh. 
+        <LI>AlwaysOnTop has now three possible values: -1 puts the window always 
+        on bottom, 0 is normal window positioning and 1 puts it always on top. 
+        <LI>Changed the compilation settings and the DLL is a quite a bit 
+        smaller now. 
+        <LI>Plugins can display string values now too. 
+        <LI>Created a SysInfo plugin that displays all kinds of data (IP number, 
+        OS version, etc.). 
+        <LI>The about dialog is now modeless. 
+        <LI>Fixed a memory leak in perfmon.dll 
+        <LI>Created a AdvancedCPU plugin that allows include/exclude processes 
+        in % Processor Time. 
+        <LI>Added SnapEdges option that snaps the window the the screen edges 
+        when moved. 
+        <LI>Added NumOfDecimals option for the string meter. 
+        <LI>Added !RainmeterToggle bang. </LI></UL>
+      <P>5 MAY 2002 (Version 0.7 ß)</P>
+      <UL>
+        <LI>Fixed a bug with histogram meter's bitmap blitting. 
+        <LI>IfAboveAction and IfBelowAction didn't work. Fixed. 
+        <LI>Added BitmapZeroFrame option to BITMAP meter. 
+        <LI>Added build-in commands for playing sounds in actions. 
+        <LI>Added NetTotal measure. 
+        <LI>Added TrafficAction and TrafficValue to execute actions after 
+        certain amount of net traffic. 
+        <LI>Added Hidden option to meters and Disabled option to measures 
+        <LI>New plugin: MBM5plugin, which measures MBM5 data (temperature, fans 
+        and volts). 
+        <LI>Added Image meter, which just shows one image. 
+        <LI>Fixed a bug in Perfmon.dll that prevented measuring counters that do 
+        not have instance names. 
+        <LI>Added !RainmeterHideMeter, !RainmeterShowMeter and 
+        !RainmeterToggleMeter to change visiblity of individual meters. 
+        <LI>Added !RainmeterDisableMeasure, !RainmeterEnableMeasure and 
+        !RainmeterToggleMeasure to change status of individual measures. 
+        <LI>The registry measure is now able to access also other keys than just 
+        the ones under HKEY_CURRENT_USER. 
+        <LI>The ini-files inside subfolders do not have to be named as 
+        Rainmeter.ini (anything that ends with .ini works). 
+        <LI>The same subfolder can contain several configuration ini-files. 
+        <LI>The !RainmeterRefresh can now get the config name and the inifile as 
+        arguments. 
+        <LI>Added !RainmeterChangeConfig bang. 
+        <LI>Negative coordinates are saved as zero to prevent the window to be 
+        placed off screen. 
+        <LI>Added UpdateDivider for measures. 
+        <LI>The Rainmeter.exe can be used to send !bangs to the Rainmeter (but 
+        only Rainmeter bangs!). 
+        <LI>Fixed vertical bar meter (should grow, not slide). 
+        <LI>Fixed a bug: histogram values were drawn one pixel too short. 
+        <LI>The left and right mouse actions can be defined also per meter. 
+      </LI></UL>
+      <P>15 JANUARY 2002 (Version 0.6 ß)</P>
+      <UL>
+        <LI>Fixed a bug that made the CPU-meter to go 100% after refreshing on 
+        Win9x. 
+        <LI>It is not necessary to name the config file as "Rainmeter.ini", 
+        anything that ends with ".ini" will do. Note that this only applies if 
+        the name of the config file is defined explicitely. 
+        <LI>If the previously used config cannot be found anymore, the first one 
+        is used instead. </LI></UL>
+      <P>26 DECEMBER 2001 (Version 0.5 ß)</P>
+      <UL>
+        <LI>IMPORTANT! The configuration file format has been changed and the 
+        old ini-files do not work anymore! Also some of the config keywords have 
+        been changed. 
+        <LI>Structural changes to the code (now it is easier to maintain). 
+        <LI>Added GatherStatistics, which is currently only supported by the 
+        NetIn/Out-measures. 
+        <LI>Added Plugin measure for external counters. Check the source code 
+        for example plugin. 
+        <LI>Added Registry measure, which can get data from a given registry 
+        key. 
+        <LI>Added button up actions (RightMouseUpAction and LeftMouseUpAction) 
+        and renamed the down actions as RightMouseDownAction and 
+        LeftMouseDownAction 
+        <LI>Added support for actions that are executed when a measure goes 
+        above/below certain value. 
+        <LI>Removed the PerfMon measure because of incompatibilities with NT4. 
+        The PerfMon measure is now implemented as Rainmeter plugin. 
+        <LI>Added Time-measure. 
+        <LI>Colors can now be defined also as hex values in RGB-format (e.g. 
+        FontColor=FFCCDD). 
+        <LI>The position of the window can be stored into the ini-file 
+        automatically. 
+        <LI>Added support for multiple configurations. The configs can be 
+        changed from context menu. </LI></UL>
+      <P>1 SEPTEMBER 2001 (Version 0.4 ß)</P>
+      <UL>
+        <LI>If the maximum value for the meters (e.g. NetInSpeed) is not given 
+        it is determined automatically from the input. 
+        <LI>All measures can be displayed as percentual strings. 
+        <LI>Added uptime-measure. Usable in a string-meter only! 
+        <LI>Added two new meters: Bar and Bitmap. 
+        <LI>Added !RainmeterRefresh bang. 
+        <LI>Added left and right mouse button actions. 
+        <LI>Now it is possible to define the location (and the name) of 
+        Rainmeter.ini-file in the step.rc with RainmeterIniFile. 
+        <LI>Added context menu, which can be used to refresh the window and quit 
+        the program if ran as standalone. 
+        <LI>Added possibility to use images as the backgrounds for the histogram 
+        graphs. 
+        <LI>Small adjustments so that Rainmeter can run in a lsbox as 
+        *WharfModule. Dunno if it also works in a real wharf. </LI></UL>
+      <P>19 AUGUST 2001 (Version 0.3 ß)</P>
+      <UL>
+        <LI>Added support for NT performance data. 
+        <LI>Added support for measuring free disk space. 
+        <LI>Added possibility to display the measure values as plain strings. 
+        <LI>Added automatic scaling for the string values. 
+        <LI>Added possibility to invert the values (e.g. measure allocated disk 
+        space instead of free space). 
+        <LI>Improved mouse over hiding. 
+        <LI>Now it is possible to start Rainmeter hidden. 
+        <LI>Added support for Litestep's Revision ID. </LI></UL>
+      <P>19 JULY 2001 (Version 0.2 ß)</P>
+      <UL>
+        <LI>Rewrote (almost) everything. 
+        <LI>The CPU &amp; memory are now measured a bit different way. </LI></UL>
+      <P>22 FEBRUARY 2001 (Version 0.1 ß)</P>
+      <UL>
+        <LI>Initial beta release </LI></UL><!-- CLIP --></DIV></TD>
+    <TD width=56 background=images/right.gif>&nbsp;</TD></TR></TBODY></TABLE></DIV>
+<DIV align=center>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=56><IMG height=62 
+      src="images/bottomleft.gif" 
+      width=56 border=0></TD>
+    <TD vAlign=top align=right background=images/bottom.gif>&nbsp;</TD>
+    <TD width=56><IMG height=62 
+      src="images/bottomright.gif" 
+      width=56 border=0></TD></TR></TBODY></TABLE></DIV></BODY></HTML>

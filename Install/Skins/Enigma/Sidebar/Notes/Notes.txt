@@ -1,0 +1,9 @@
+﻿<title>Enigma Tips</title>
+
+<notes>- Click the icon above to edit your notes!
+
+- Double-click the Sidebar or Taskbar to reopen the Home menu.
+
+- Middle-click the Sidebar or Taskbar to configure your personal variables.
+
+- Middle-click other skins to refresh them (or cycle their variants, if they have any).</notes>

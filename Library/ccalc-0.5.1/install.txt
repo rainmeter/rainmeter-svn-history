@@ -1,0 +1,25 @@
+To make commant-line calculator ( ccalc ) in unix
+$ make
+# make install
+
+To make commant-line calculator ( ccalc.exe ) in win32 
+> make
+You must manually copy ccalc.exe to the place you want.
+
+To make ccalc-library ( ccalc.so ) in unix
+$ make linux-so
+# make linux-so-install
+
+To make ccalc-library ( ccalc.dll ) in win32
+> make win32-dll
+> make win32-dll-install
+Make sure WINSYSDIR variable in the Makefile points to your windows/system
+directory!
+> make win32-import
+Make sure WININCLDIR variables in the Makefile points
+to the include directory of you C/C++ compiler and
+WINLIBDIR points to the directory containing import libraries!
+> make win32-import-install
+
+Enjoy.
+If problems mail me: Walery Studennikov <hqsoftware@mail.ru>

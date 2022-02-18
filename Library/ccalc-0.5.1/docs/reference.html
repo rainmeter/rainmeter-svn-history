@@ -1,0 +1,310 @@
+<HTML>
+<HEAD>
+<TITLE>CCalc documentation and reference</TITLE>
+</HEAD>
+
+<BODY leftmargin=10 rightmargin=30>
+
+<FONT COLOR="#000090">
+<H1 align=center>CCalc documentation and reference</H1>
+</FONT>
+
+<hr width=50%>
+
+<div align=center>
+<a href="index.html">Homepage</a>
+| <a href="http://hqsoftware.newmail.ru/ccalc/download/">Download</a>
+| Reference
+</div>
+
+<hr width=50%>
+<br>
+
+<p align=center><b>Contents</b></p>
+<b>
+<ul>
+<li><a href="#SYNTAX">Expressions syntax</a>
+<li><a href="#LIBRARY">Library reference</a>
+<ul>
+<li><a href="#StrMap">StrMap</a>
+<li><a href="#MathParser">MathParser</a>
+</ul>
+</ul>
+</b>
+
+<a name="SYNTAX"></a>
+<H2 align=center><font color="#000090">
+CCalc expressions syntax
+</font></h2>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+You may use mathematically-correct expressions, including brackets,
+functions etc.
+
+<h4><font color="#000090">CCalc expressions syntax admits:</font></h4>
+
+<UL>
+<LI><font color="#A02000"><b>Numbers</b></font>
+<BR><BR>
+
+<DL>
+<DT><b>Decimal</b> numbers
+<DD>123.456e+78
+<DT>Integer <b>hex</b> numbers
+<DD>0x123
+<DT>Integer <b>oct</b> numbers
+<DD>0677
+</DL>
+
+<BR>
+
+<LI><font color="#A02000"><b>Mathematical constants E and Pi</b></font>
+<BR><BR>
+
+<LI><font color="#A02000"><b>Large number of arithmetical and bitwise operations</b></font>
+<BR><BR>
+
+<DL>
+<DT><B>+ - * /</B>
+<DD>It is obvious
+<DT><B>%</B>
+<DD>Remainder
+<DT><B>**</B>
+<DD>Power
+<DT><B>& | ^ ~</B>
+<DD>Bitwise and / or / xor / not
+</DL>
+
+<BR>
+
+<LI><font color="#A02000"><b>Logical operations and relations</b></font>
+<DL>
+<DT><B>&lt;&gt; = &gt; &lt;</B>
+<DD> not equal / equal / greater / less relations
+<DT><B>&& ||</B>
+<DD>Logical and / or
+</DL>
+
+<BR>
+
+<LI><font color="#A02000"><b>Functions</b></font>
+<pre>ARCTAN, ARCSIN, ARCCOS, COS, SIN, TAN,
+ABS, EXP, LN, LOG, SQRT, SQR, SGN, SIGN,
+FRAC, TRUNC, FLOOR, CEIL, ROUND( x[, precision] )
+</pre>
+
+<BR>
+
+<LI><font color="#A02000"><b>Conditional operator</b></font>
+<pre>
+&lt;condition&gt; ? &lt;true expr.&gt; : &lt;false expr.&gt;
+</pre>
+where
+<DL>
+<DT>&lt;condition&gt;
+<DD>- logical condition. 0 - false, nonzero - true.
+    Logical relations and operations may be used.
+<DT>&lt;true expr.&gt;
+<DD>- expression for true expression
+<DT>&lt;false expr.&gt;
+<DD>- expression for false expression
+</DL>
+
+</UL>
+
+<h4><font color="#000090">Correct expressions examples:</font></h4>
+
+<DL>
+
+<DT>(sin(Pi/2) + 1) / 4
+<DD>= 0.5
+
+<DT>2 &gt; 3
+<DD>= 0 (false)
+
+<DT>(2*2=4) ? 1 : 0
+<DD>= 1
+
+<DT>round( 1.2345, 2 )
+<DD>= 1.23
+
+<DT>round( 27.45, -1 )
+<DD>= 30
+
+</DL>
+
+</UL>
+
+<h4><font color="#000090">CCalc script</font></h4>
+
+<p>CCalc script begins with "#!". The syntax is clear from the example:
+
+<pre>
+#!
+a := 2;
+b := 3;
+return a * b + 1;
+</pre>
+
+
+<a name="LIBRARY"></a>
+<H2 align=center><font color="#000090">
+CCalc Library
+</font></h2>
+
+<p align="justify">
+The library consists of three components with their own API:
+
+<dl>
+<dt> <a href="#StrMap"><b>StrMap</b></a> (strmap.h)
+<dd> Small "sublibrary" for working with "string lists". You must
+     communicate with StrMap if you want to add your own user-defined
+     functions (UDFs) and user-defined variables (UDVs)
+<dt> <b>Lexer</b> (lexer.h)
+<dd> Universal lexical analyser used as backend layer for parsing
+     expressions. In general developers have no need to communicate
+     directly with Lexer. But they can use it separately for their own needs.
+<dt> <a href="#MathParser"><b>MathParser</b></a> (mparser.h)
+<dd> Core component which calculates expressions. It is
+     very easy to use but may be hard to initialize to match your needs.
+</dl>
+
+<a name="StrMap">
+<h3 align="center"><font color="#000090"> StrMap reference </font></h4>
+
+<table cellpadding=5 cellspacing=0 bgcolor=#F0F0FF><tr><td><pre>
+hqStrMap* Strmap_Create( int extrabytes, int dup );
+hqStrMap* Strmap_CreateFromChain( int extrabytes, char *strchain, void *data );
+void StrMap_Destroy( hqStrMap* strmap );
+
+void StrMap_AddString( hqStrMap* strmap, char *str, void *data );
+void StrMap_AddStrLen( hqStrMap* strmap, char *str, int len, void *data );
+void StrMap_ShrinkMem( hqStrMap* strmap );
+void StrMap_Trim( hqStrMap* strmap, int NewCount );
+void StrMap_TrimClear( hqStrMap* strmap, int NewCount );
+void StrMap_SetCapacity( hqStrMap* strmap, int NewCapacity );
+int StrMap_IndexOf( hqStrMap* strmap, char *str, void **data );
+int StrMap_LenIndexOf( hqStrMap* strmap, char *str, int len, void **data );
+char* StrMap_GetString( hqStrMap* strmap, int index, int *len, void **data );
+void Strmap_FillFromChain( hqStrMap* strmap, char *strchain, void *data );
+</pre></td></tr></table>
+<br>
+
+I have no time to describe each function, just some
+examples of most common usage:
+
+<h4>Creating list of variables from "char chain"</h4>
+
+Variables will be associated with <tt>double</tt> values;
+<br><br>
+<table cellpadding=5 cellspacing=0 bgcolor=#F0F0FF><tr><td><pre>
+char varnames[] = "X\000" "Y\000" "Z\000\000";
+double varvalues[] = { 5.3, 6.1, -7.45 };
+
+hqStrMap* varmap = Strmap_CreateFromChain( sizeof(double), varnames, varvalues );
+
+...
+
+StrMap_Destroy( varmap );
+</pre></td></tr></table>
+
+Note that <tt>varnames</tt> is a special data structure ("char chain"):<br>
+a string containing zero-separated "substrings" terminated by double zero.
+
+<h4>Creating list of variables step-by-step</h4>
+
+<table cellpadding=5 cellspacing=0 bgcolor=#F0F0FF><tr><td><pre>
+
+double varvalues[] = { 5.3, 6.1 };
+
+hqStrMap* varmap = Strmap_Create( sizeof(double), 0 /* do not copy strings */ ); 
+
+StrMap_AddString( varmap, "X", varvalues );
+StrMap_AddString( varmap, "Y", varvalues+1 );
+
+...
+
+StrMap_Destroy( varmap );
+</pre></td></tr></table>
+
+<a name="MathParser">
+<h3 align="center"><font color="#000090"> MathParser reference </font></h4>
+
+<table cellpadding=5 cellspacing=0 bgcolor=#F0F0FF><tr><td><pre>
+typedef int (*PrmSrchFunc) ( const char *str, int len, double *value,
+			     void *param );
+
+typedef struct {
+    /* public */
+    hqStrMap   *Parameters;	// List of numeric veriables
+    hqStrMap   *ExtFunctions;   // List of multi-argument external functions
+    PrmSrchFunc MoreParams;	// Function for calculating unhandled parameters
+    void       *ParamFuncParam; // Parameter given to this function
+    /* private */
+    ...
+} hqMathParser;
+
+hqMathParser* MathParser_Create( char *MoreLetters );
+void MathParser_Destroy( hqMathParser* parser );
+char* MathParser_Parse( hqMathParser* parser, char *Formula, double *result );
+</pre></td></tr></table>
+
+Some examples of usage:
+
+<h4> Initializing MathParser for using with list of UDVs </h4>
+
+<table cellpadding=5 cellspacing=0 bgcolor=#F0F0FF><tr><td><pre>
+/* ... creating list of variables. See StrMap reference for example */
+
+hqMathParser* parser = MathParser_Create( NULL );
+
+parser->Parameters = varmap;
+</pre></td></tr></table>
+
+<h4> Initializing MathParser for using with list of UDFs </h4>
+
+<table cellpadding=5 cellspacing=0 bgcolor=#F0F0FF><tr><td><pre>
+/* multiarg test function  */
+char* dummy( int paramcnt, double *args, hqStrMap *strparams, double *result );
+
+char funcnames[] =
+    "DUMMY\000";
+char* (*funcaddrs[])() = {
+    &dummy };
+
+hqStrMap* strmap = Strmap_CreateFromChain( sizeof(void*), funcnames, funcaddrs );
+
+hqMathParser* parser = MathParser_Create( NULL );
+
+parser->ExtFunctions = strmap;
+</pre></td></tr></table>
+
+<h4> Calculating expression </h4>
+
+<table cellpadding=5 cellspacing=0 bgcolor=#F0F0FF><tr><td><pre>
+double result;
+char *ErrMsg = MathParser_Parse( parser, "sin(x * x) / 2", &result );
+if ( ErrMsg == NULL )
+    printf( "%.15G\n", result );
+else {
+    puts( ErrMsg );
+</pre></td></tr></table>
+<br>
+
+<h4> Destroying MathParser </h4>
+
+<table cellpadding=5 cellspacing=0 bgcolor=#F0F0FF><tr><td><pre>
+MathParser_Destroy( parser );
+/* Don't forget to destroy lists of UDFs and UNVs if they are created before */
+StrMap_Destroy( strmap );
+</pre></td></tr></table>
+
+<hr>
+
+<p>
+Of course this documentation is incomplete as I have no time now
+to write more.
+For more information see <b>ccalc.c</b> as an example of usage of the library;
+
+</BODY>
+</HTML>

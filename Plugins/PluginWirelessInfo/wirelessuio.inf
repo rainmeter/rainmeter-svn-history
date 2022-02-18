@@ -1,0 +1,75 @@
+;-------------------------------------------------------------------------
+; NDISUIO.INF -- NDIS Usermode I/O Driver
+;
+; Copyright (c) 2000, Microsoft Corporation
+;-------------------------------------------------------------------------
+[version]
+Signature   = "$Windows NT$"
+Class       = NetTrans
+ClassGUID   = {4d36e975-e325-11ce-bfc1-08002be10318}
+Provider    = %Msft%
+LayoutFile  = layout.inf
+
+[Manufacturer]
+%Msft%=MSFT
+
+[MSFT]
+%WIRELESSUIO_Desc%=Install, MS_WIRELESSUIO
+
+;-------------------------------------------------------------------------
+; Installation Section
+;-------------------------------------------------------------------------
+[Install]
+AddReg=Inst_Ndi
+Characteristics=0x28 ; NCF_HIDDEN | NCF_NOT_USER_REMOVABLE
+CopyFiles=CpyFiles_Sys
+
+;-------------------------------------------------------------------------
+; Ndi installation support
+;-------------------------------------------------------------------------
+[Inst_Ndi]
+HKR,Ndi,Service,,"Wirelessuio"
+HKR,Ndi,HelpText,,%WIRELESSUIO_HelpText%
+HKR, Ndi\Interfaces, UpperRange,, noupper
+HKR,"Ndi\Interfaces","LowerRange",,"ndis5,ndis4,ndis5_uio"
+
+;-------------------------------------------------------------------------
+; Service installation support
+;-------------------------------------------------------------------------
+[Install.Services]
+AddService=Wirelessuio,,WIRELESSUIO_Service_Inst
+
+[Wirelessuio_Service_Inst]
+DisplayName     = %WIRELESSUIO_Desc%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 1 ;SERVICE_MANUAL_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\Wirelessuio.sys
+LoadOrderGroup  = NDIS
+Description     = %WIRELESSUIO_Desc%
+
+[Install.Remove.Services]
+DelService=Wirelessuio
+
+;-------------------------------------------------------------------------
+; Declare Destination Directories for file copy/deletion
+;-------------------------------------------------------------------------
+[DestinationDirs]
+CpyFiles_Sys    = 12    ; DIRID_DRIVERS
+
+
+;-------------------------------------------------------------------------
+; Files to Copy/Delete - Referenced by Install and Remove sections above
+;-------------------------------------------------------------------------
+[CpyFiles_Sys]
+Wirelessuio.sys,,,2
+
+[Strings]
+Msft = "Microsoft"
+WIRELESSUIO_Desc = "Wireless Usermode I/O Protocol"
+WIRELESSUIO_HelpText = "A driver to support user-mode I/O on NDIS devices"
+
+
+
+
+

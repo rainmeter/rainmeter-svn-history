@@ -1,0 +1,266 @@
+ENIGMA
+v 2.6
+by Kaelri
+
+
+
+-----------------------
+ABOUT
+
+Enigma is a comprehensive, minimalist, highly-adaptable suite for the popular desktop enhancement application, Rainmeter. This package contains the suite's source files, along with several "special features" not included in Rainmeter.
+
+Please see RESOURCES\DOCUMENTS\INSTRUCTIONS.PDF for more complete documentation.
+
+
+
+-----------------------
+LICENSE
+
+This package, and all of its contents, are released under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License. (http://creativecommons.org/licenses/by-nc-sa/3.0/). The package also contains resources from other authors, under similar terms of use. See INSTRUCTIONS.PDF for a complete list.
+
+
+
+-----------------------
+CONTACT
+
+Email	Kaelri.LCD@gmail.com
+Blog	http://liquidcrystaldiscourse.blogspot.com/ (removed)
+Support	http://www.rainmeter.net/forum/viewtopic.php?f=5&t=777
+
+
+
+-----------------------
+CHANGELOG
+2.7 RC1
+-----
+Date: 29 May 2010
+- Added Sidebar\Calendar\Calendar+.ini.
+- Added Sidebar\Music\Winamp\Music-Winamp+.ini: New functionality.
+- Fixed formula for time adjustment in World skins.
+- Fixed Instructions.pdf
+
+2.6.2
+-----
+Date: 15 May 2010 (dragonmage)
+- Fixed Rain skin. (thanks jdisk)
+- Modified Time measures for World Clocks: needs testing.
+- Added LocalDSTOffset variable: for use with World Clock times.
+- Added Remember the Milk variables to EnigmaConfigure.
+- Modified Themes to use AlwaysOnTop=-2 with proper LoadOrder: to make use of the Windows 7 fix for Show Desktop.
+
+2.6.1
+-----
+Date: 4 November 2009
+App: Rainmeter 1.1
+- Added Remember the Milk Reader.
+- Fixed Gmail-Reader: skin would be blank with only one new message.
+- Fixed Music\Winamp (both Sidebar and Taskbar variants): eliminated overlapping text, misnamed measure.
+- Changed Installer: now copies user variables from backup to new.
+- Changed Music album backing: replaced with a higher-res version.
+
+2.6
+---
+Date: 18 October 2009
+App: Rainmeter 1.1
+- Optimized for Rainmeter 1.1.
+- Added Launcher (1-5): individual launcher skins with Taskbar stylesheet.
+- Added MoxaWeather-3Days-Horizontal.
+- Added Music-Art.
+- Added Resources Links: these "skins" redirect to services like Instructions, Support, etc. and then close themselves.
+- Changed Installer: removes old Enigma skins folder before copying new one.
+- Changed Configure: will protect existing user variables in future updates.
+- Changed Home: thumbnail, icons now clickable.
+- Changed Themes: new default and preview arrangements, fully relative positions.
+- Changed Instructions: revisions for RainBrowser, new Home skin, Resources links.
+- Changed all skins: added Preview, Credits tags.
+- Changed Arcs: added metadata.
+- Changed Launcher: apps and paths can now be edited through RainConfigure.
+- Changed Sidebar, Taskbar: middle-click to open RainConfigure.
+- Changed MoxaWeather: removed unnecessary blank space.
+- Changed Music: no longer depends on Taskbar style.
+- Changed Notes: default text file is now UTF-8.
+- Fixed all skins: bug in middle-mouse refresh action.
+- Fixed World: invalid substitution.
+
+2.6 RC4
+-------
+Date: 14 October 2009
+App: Rainmeter 1.1 r261
+- Added common variable inclusion: Variables.INC.
+- Added common module inclusion: StyleTaskbar.INC.
+- Added common module inclusion: StyleTaskbar-Mini.INC.
+- Added common module inclusion: StyleTaskbar-Mini2.INC. Can be added to "Mini" skins individually, or replace StyleTaskbar-Mini.INC.
+- Added Gcal-Reader.
+- Changed all skins: revised metadata format.
+- Changed all skins: changed over from AccuWeather to Yahoo! Weather.
+- Changed all skins: middle-click to switch variants. (Skins without variants will just refresh.)
+- Changed Configure: new visual style by JSMorley.
+- Changed Enigma: replaced with miniature service-launching dock.
+- Changed Clock, World: added variable to change the analog clock face.
+- Changed MoxaWeather: decreased splash screen duration, matched location and size on 3days.
+- Changed MoxaWeather: removed Toggle. You can now switch between the one- and three-day variants by middle-clicking the skin.
+- Changed Network-Address, -IO: added global variable for max upload/download speeds.
+- Changed Notes: separated title and content by XML tags.
+- Changed Notes: decreased text size to match Readers and other sidebar skins.
+
+2.6 RC3
+-------
+Date: 8 September 2009
+App: Rainmeter 1.1 r213
+- Added Resources: all images and supporting files moved here, referenced from skins by absolute paths.
+- Added Music-Winamp.
+- Changed all skins: added Metadata.
+- Changed all skins: added Meter Styles, updates comments format.
+- Changed Home: renamed to Enigma.ini.
+- Changed Instructions: new and expanded .PDF manual.
+- Changed Sidebars: added config variable to adjust taskbar clearance height.
+- Changed Sidebars, Taskbars: double-click to load Enigma.ini.
+- Changed Clock, World: no longer require separate images for analog clock hands.
+- Changed MoxaWeather-Toggle, -3Days: forecast now reads "Today" instead of current weekday.
+- Changed MoxaWeather-Toggle: extended panel hidden by default.
+- Changed Music: player controls appear on mouseover.
+- Changed Network-WiFi: Added NetIn/NetOut bars.
+- Changed System Compact: added battery power to icon.
+
+2.6 RC2
+-------
+Date: 18 August 2009
+App: Rainmeter 1.1 r181
+- Changed all skins: invisible backing added to all applicable.
+- Changed Installer: properly identifies Program Files on 64-bit.
+- Changed Reader: tabbed list showing all four default feeds.
+- Changed Reader: optimized regular expressions. Performance significantly increased.
+- Changed Reader: links no longer hover blue.
+- Fixed Music: wrapping and overlapping errors.
+
+
+2.6 RC1
+-------
+Date: 15 August 2009
+App: Rainmeter 1.1 r181
+- Added Rain.
+- Added Moon: modified from MoonShine by benjam.
+- Added World.
+- Added Network.
+- Added Network-Address.
+- Added Network-IO (expanded from System-NET).
+- Added Network-WiFi.
+- Added Enigma Preview theme.
+- Changed all skins: AppVersion requirement raised to 1.0.
+- Changed all skins: text shadows no longer on by default.
+- Changed all skins: Trebuchet MS now universal font.
+- Changed all skins: standard variable names for all fonts, sizes, colors, disk drives.
+- Changed Home: completely rewritten as compact, tabbed window.
+- Changed Config: sets text colors and B&W image variants for all skins.
+- Changed Templates: Sidebar/Taskbar now translucent and positioned on sides on first appearance, and no skins snap to edges or keep on screen.
+- Changed Gmail Reader: only pings the server once, no longer uses HTTPS connection.
+- Changed MoxaWeather: config tool now sets Fahrenheit/Celsius preference.
+- Changed Music: retrieves album artwork as default icon. Can be switched back to play/pause function.
+- Fixed Calendar: Thursday label.
+- Removed all Alt skins.
+
+
+2.5.1
+-----
+Date: 7 August 2009
+App: Rainmeter 1.0
+- Optimized for Rainmeter 1.0.
+
+2.5
+---
+Date: 7 August, 2009
+App: Rainmeter 1.0
+- Added Configure: automated multi-file variable editor.
+- Changed Setup: overhauled GUI, folder detection for new Rainmeter scheme.
+- Changed Templates: compatible with RainThemes, auto-adjust to user's resolution.
+- Changed Home: accesses Configure, RainThemes, Instructions, and Support thread on Rainmeter.net.
+- Added taskbar variants for Music. Press icon to play/pause.
+- Added Calendar-Week: displays only current week.
+- Added Recycler.
+- Added Sun: displays local sunrise/sunset times.
+- Added Uptime.
+- Added Atom-Reader.
+- Added Gmail-Reader.
+- Added Twitter-Reader.
+- Changed all skins: added text shadows.
+- Changed Second Reader, Third Reader: condensed to RSS-Reader, user can create duplicates.
+- Changed Sidebar, Taskbar: fits user's resolution automatically.
+- Changed Cal-Week: label is now the date.
+- Changed Gmail: Mini now displays subject line of first unread message.
+- Changed Gmail, Reader: updates every 5 and 10 minutes, respectively.
+- Changed Location, Clock: removed GeoBytes pinger, replaced with AccuWeather parser.
+- Changed MoxaWeather: now uses AccuWeather and complies with ToS. Removed "Enigma" icon set.
+- Changed Music: now supports iTunes natively using iTunes plugin.
+- Changed Notes, Reader: icon moved to the left side.
+- Changed Reader: smaller invisible backing.
+- Changed Systems: split into two columns, no longer leaves space for icons.
+- Changed Taskbar-with-Panel: panel actually exists, and can be moved/resized independently.
+- Removed unused images from Launcher.
+- Moved CD Art Displays to Special Features.
+
+2.1
+---
+Date: 20 March, 2009
+App: Rainmeter 0.14
+- Changed Instructions: revised troubleshooting section.
+- Changed Setup: now automatically detects user's Program Files directory.
+- Changed Reader: title now clears stuck links on mouseover. (Thanks to moosatov.)
+- Added inverted-color variants for MoxaWeather.
+- Fixed NET Icon: required MaxValue setting.
+
+2.0
+---
+Date: 20 February, 2009
+App: Rainmeter 0.14
+- Added EnigmaSetup2.0.exe: automatic installer for the theme, fonts, and Beginner template. (The existing Rainmeter.ini is backed up.)
+- Added "Home" GUI widget manager: clickable menu tool for activating skins and switching between variations.
+- Added "Toggle": shows/hides the Sidebar and all skins in the "Sidebar" class.
+- Added MoxaWeather-4Days-Toggle: shows/hides three-day forecast in one click.
+- Added customized MoxaWeather icons and dark eqclipse2 icons.
+- Added inverted-color variants for all skins.
+- Changed Gmail-Icon: now highlights to indicate unread mail.
+- Changed Reader: items now link to their articles individually.
+- Changed Reader, Notes: icon now opens the source file/feed page in one click.
+- Changed Reader, Notes, Systems: added invisible background for easy dragging.
+- Changed Launcher. Button now loads Launcher skin by itself; app buttons no longer close the skin.
+- Changed all skins: optimized update rates. Performance notably improved.
+- Removed large analog clock from Taskbar Clock (it's exactly the same as Sidebar\Clock\LittleClock; just remove the text meters).
+- Removed "Tray" set; expanded most Taskbar widgets with a "Mini" alternative in the Tray format.
+- Added "Arcs" as a Rainmeter skin.
+- Samurize config now considered a bonus feature.
+
+1.1
+---
+Date: 3 January, 2009
+App: Samurize 1.64.3, Rainmeter 0.14
+- Reorganized Rainmeter theme.
+- Fixed Location bug.
+- Began third Rainmeter set: "Tray."
+- Provided second Sidebar.
+- Added Calendar.
+- Added Reader.
+- Added Gmail.
+- Added Launcher.
+- Added NET.
+- Added second, third HDD.
+- Added icon versions of some System widgets.
+- Updated, revised and expanded various skins.
+Planned for future release:
+- Auto-hidden Notes and Reader widgets for Taskbar.
+- Disk ejector.
+- Process monitor.
+
+1.0
+---
+Date: 18 November, 2008
+App: Samurize 1.64.3, Rainmeter 0.14
+- Revised text instructions.
+- Replaced missing file (BorderHour.png) in Rainmeter Theme\Enigma\Sidebar\Clock.
+- Replaced missing file (BorderMinute.png) in Rainmeter Theme\Enigma\Sidebar\Clock.
+- Replaced missing file (BorderSecond.png) in Rainmeter Theme\Enigma\Sidebar\Clock.
+
+0.9
+---
+Date: 15 November, 2008
+App: Samurize 1.64.3
+- Original.
